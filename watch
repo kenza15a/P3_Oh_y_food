@@ -36,7 +36,6 @@ body {
 .restaurant-wrapper {
   display: flex;
   flex-direction: column;
-  /*comment*/
   width: 100%;
 }
 
@@ -68,4 +67,4 @@ footer a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=watch.map */
