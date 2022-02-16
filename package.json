@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "P3 openClassroom",
   "main": "index.js",
+  "quotemark": [
+    true,
+    "double"
+  ],
   "scripts": {
-   "sass": "sass --watch ./sass/style.scss:./css/styles.css" 
-    },
+  "sass": "sass --watch ./sass/style.scss:./css/styles.css" 
+   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kenza15a/p3_kenzafilali.git"
