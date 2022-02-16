@@ -1,5 +1,15 @@
-@import url("libs/normalize.css");
+@import url("./libs/normalize.css");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*old code*/
 body {
+  box-sizing: border-box;
   padding-top: 0;
   text-decoration: none;
 }

@@ -8,7 +8,7 @@
     "double"
   ],
   "scripts": {
-  "sass": "sass --watch ./sass/style.scss:./css/styles.css" 
+  "sass": "sass --watch ./sass/main.scss:./css/styles.css" 
    },
   "repository": {
     "type": "git",
