@@ -1,2 +1,7 @@
 @import url('./libs/normalize.css');
+@import "./utils/variables";
 @import "./base/base";
+@import "./layouts/header";
+@import "./layouts/navbar";
+@import "./layouts/restaurants";
+@import "./componants/card";

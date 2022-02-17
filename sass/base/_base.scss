@@ -1,36 +1,11 @@
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-
 /*old code*/
 
 body{
     box-sizing: border-box;
     padding-top: 0;
     text-decoration: none;
-  }
-  .presentation{
-    display:flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    width:100%;
-  }
-  .logo{
-    width: 80%;
-    height: 30px;
-    object-fit:contain;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .location{
-    background-color: gray;
-    
+    margin:0;
   }
   .shoutout__button{
     line-height: 10px;
@@ -41,27 +16,8 @@ body{
     border-radius: 15px;
     height: 30px;
   }
-  .restaurant-wrapper{
-      display:flex;
-      flex-direction: column;/*comment*/
-      width: 100%;
+ 
   
-  }
-  .restaurant{
-    display:flex;
-      flex-direction: column;
-     border-radius: 15px;
-     -webkit-box-shadow: 6px 7px 15px 2px rgba(0,0,0,0.47); 
-     box-shadow: 6px 7px 15px 2px rgba(0,0,0,0.47);
-     margin-bottom: 15px;
-     
-  }
-  .restaurant img{
-      object-fit:cover ;
-      border-radius: 15px 15px 0px 0px;
-      height: 200px;
-      width:100%
-  }
   footer{
     display: flex;
     flex-direction: column;

@@ -1,36 +1,19 @@
 @import url("./libs/normalize.css");
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+/*$colour-primary: #15DEA5;
+$colour-secondary: #001534;
+$colour-accent: #D6FFF5;
+$colour-white: #fff;
+$colour-invalid: #DB464B;
 
+$heading-shadow-size: .55rem;
+
+$grid-gutter: $layout-margin * .25;*/
 /*old code*/
 body {
   box-sizing: border-box;
   padding-top: 0;
   text-decoration: none;
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  -ms-flex-align: center;
-  width: 100%;
-}
-
-.logo {
-  width: 80%;
-  height: 30px;
-  object-fit: contain;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.location {
-  background-color: gray;
+  margin: 0;
 }
 
 .shoutout__button {
@@ -43,29 +26,6 @@ body {
   height: 30px;
 }
 
-.restaurant-wrapper {
-  display: flex;
-  flex-direction: column;
-  /*comment*/
-  width: 100%;
-}
-
-.restaurant {
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  -webkit-box-shadow: 6px 7px 15px 2px rgba(0, 0, 0, 0.47);
-  box-shadow: 6px 7px 15px 2px rgba(0, 0, 0, 0.47);
-  margin-bottom: 15px;
-}
-
-.restaurant img {
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-  height: 200px;
-  width: 100%;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -76,6 +36,49 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  width: 100%;
+}
+
+.location {
+  background-color: gray;
+}
+
+.logo {
+  width: 80%;
+  height: 30px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.restaurant-wrapper {
+  display: flex;
+  flex-direction: column;
+  /*comment*/
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  -webkit-box-shadow: 6px 7px 15px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 6px 7px 15px 2px rgba(0, 0, 0, 0.47);
+  margin-bottom: 15px;
+}
+.restaurant img {
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+  height: 200px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

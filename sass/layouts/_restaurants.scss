@@ -1,0 +1,9 @@
+
+.restaurant-wrapper{
+    display:flex;
+    flex-direction: column;/*comment*/
+    width: 100%;
+    margin-left: $layout-margin;
+    margin-right: $layout-margin;
+
+}

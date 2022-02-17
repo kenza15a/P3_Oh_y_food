@@ -1,0 +1,17 @@
+.restaurant{
+    display:flex;
+      flex-direction: column;
+     border-radius: 15px;
+     -webkit-box-shadow: 6px 7px 15px 2px rgba(0,0,0,0.47); 
+     box-shadow: 6px 7px 15px 2px rgba(0,0,0,0.47);
+     margin-bottom: 15px;
+
+    img{
+        object-fit:cover ;
+        border-radius: 15px 15px 0px 0px;
+        height: 200px;
+        width:100%
+    }
+     
+  }
+  

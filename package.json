@@ -8,7 +8,8 @@
     "double"
   ],
   "scripts": {
-  "sass": "sass --watch ./sass/main.scss:./css/styles.css" 
+  "sass": "sass --watch ./sass/main.scss:./css/styles.css" ,
+  "prefix": "postcss ./css/styles.css --use autoprefixer -d ./css/prefixed"
    },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   ],
   "author": "Kenza Filali",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/kenza15a/p3_kenzafilali/issues"
   },
