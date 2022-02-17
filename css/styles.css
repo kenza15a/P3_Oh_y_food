@@ -120,6 +120,15 @@ nav .logo {
   border: none;
   border-radius: 40px;
   padding: 15px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-shoutout a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .button_commander {

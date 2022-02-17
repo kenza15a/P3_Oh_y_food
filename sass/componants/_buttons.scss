@@ -7,6 +7,14 @@
         border:none;
         border-radius: 40px;
         padding:15px;
+        width:fit-content;
+        @include margin-auto;
+        a{
+            text-decoration:none;
+            color:$colour-white;
+            font-size:20px;
+            font-weight:bold;
+        }
       
       }
 
