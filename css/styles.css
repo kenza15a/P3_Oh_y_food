@@ -1,29 +1,48 @@
-@import url("./libs/normalize.css");
-/*$colour-primary: #15DEA5;
-$colour-secondary: #001534;
-$colour-accent: #D6FFF5;
-$colour-white: #fff;
-$colour-invalid: #DB464B;
-
+/*$colour-invalid: #DB464B;*/
+/*
 $heading-shadow-size: .55rem;
-
 $grid-gutter: $layout-margin * .25;*/
+/*@mixin border($colour:$colour-primary) {
+    border: .1rem solid $colour;
+}
+
+@mixin img-ratio {
+    width: 100%;
+        display: block;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+}
+
+@mixin btn {
+    padding: $grid-gutter;
+    @include border;
+    color: $colour-primary;
+    background: $colour-secondary;
+    cursor: pointer;
+    &:hover{
+        background: $colour-primary;
+        color: $colour-accent;
+    }
+    &--full-width {
+        width: 100%;
+        margin: 0 auto;
+    }
+}*/
 /*old code*/
 body {
   box-sizing: border-box;
   padding-top: 0;
   text-decoration: none;
-  margin: 0;
-}
-
-.shoutout__button {
-  line-height: 10px;
-  text-decoration: none;
-  background-color: yellow;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  height: 30px;
+  margin: 0px;
+  margin-top: 25px;
 }
 
 footer {
@@ -38,20 +57,32 @@ footer a {
   text-decoration: none;
 }
 
+header {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
   -ms-flex-align: center;
   width: 100%;
 }
-
-.location {
-  background-color: gray;
+.presentation-location {
+  background-color: #eaeaea;
 }
 
-.logo {
-  width: 80%;
-  height: 30px;
+nav {
+  height: 60px;
+  background-color: #fff;
+  /*shadow navbar*/
+  box-shadow: -2px 10px 12px -1px #f6f6f6;
+}
+nav .logo {
+  width: 100%;
+  height: 40px;
   object-fit: contain;
   margin-left: auto;
   margin-right: auto;
@@ -79,6 +110,20 @@ footer a {
   border-radius: 15px 15px 0px 0px;
   height: 200px;
   width: 100%;
+}
+
+.button-shoutout {
+  /*bouton page d'accueil*/
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+.button_commander {
+  /*bouton de commande*/
 }
 
 /*# sourceMappingURL=styles.css.map */

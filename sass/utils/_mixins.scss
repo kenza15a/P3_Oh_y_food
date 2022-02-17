@@ -1,8 +1,8 @@
-@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
-    text-shadow: $offset $offset $colour;
+@mixin nav-shadow ($color){/*shadow navbar*/
+    box-shadow: -2px 10px 12px -1px $color;    
 }
 
-@mixin border($colour:$colour-primary) {
+/*@mixin border($colour:$colour-primary) {
     border: .1rem solid $colour;
 }
 
@@ -35,4 +35,4 @@
         width: 100%;
         margin: 0 auto;
     }
-}
+}*/

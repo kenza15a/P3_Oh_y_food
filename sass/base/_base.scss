@@ -5,19 +5,11 @@ body{
     box-sizing: border-box;
     padding-top: 0;
     text-decoration: none;
-    margin:0;
+    margin:0px;
+    margin-top:$margin-top;
   }
-  .shoutout__button{
-    line-height: 10px;
-    text-decoration: none;
-    background-color:yellow;
-    color: white;
-    border:none;
-    border-radius: 15px;
-    height: 30px;
-  }
- 
   
+
   footer{
     display: flex;
     flex-direction: column;

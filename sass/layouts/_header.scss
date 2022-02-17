@@ -1,11 +1,23 @@
+header{
+  margin-top:$margin-top;
+ padding-bottom:15px;
+  text-align:center;
+  background-color:$colour-header;
+}
+
 .presentation{
     display:flex;
     flex-direction: column;
     -ms-flex-align: center;
     width:100%;
-  }
- 
-  .location{
-    background-color: gray;
+   
+   
+    &-location{
+      background-color: $colour-location;
+      
     
   }
+}
+  
+ 
+  
