@@ -63,14 +63,13 @@ header {
   text-align: center;
   background-color: #f6f6f6;
 }
-
-.presentation {
+header .presentation {
   display: flex;
   flex-direction: column;
   -ms-flex-align: center;
   width: 100%;
 }
-.presentation-location {
+header .presentation-location {
   background-color: #eaeaea;
 }
 

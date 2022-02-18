@@ -3,9 +3,7 @@ header{
  padding-bottom:15px;
   text-align:center;
   background-color:$colour-header;
-}
-
-.presentation{
+  .presentation{
     display:flex;
     flex-direction: column;
     -ms-flex-align: center;
@@ -18,6 +16,10 @@ header{
     
   }
 }
+}
+
+
+
   
  
   
