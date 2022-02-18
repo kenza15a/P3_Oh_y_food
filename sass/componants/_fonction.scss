@@ -1,0 +1,17 @@
+.fonction{
+    @include margin-auto;
+    margin-bottom:$margin-bottom;
+    padding:$padding-containter+10px;
+    background-color: $colour-location;
+    width:350px;
+    margin-left: 15px;
+    min-width:fit-content;
+    border-radius:$border-radius;
+    @include elements-shadow;
+
+    @include flex_row;
+    &-text{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,48 @@
+.fonctionnement-wrapper{
+
+    @media(min-width:992px){/*descktop*/
+       width:100%;
+        padding:$padding-containter;
+        @include flex_column-auto;
+        text-align: center;}
+    
+    @media(max-width:922px){/*tablet*/
+        width:100%;
+         padding:$padding-containter;
+         @include flex_column-auto;
+         text-align: center;}
+    @media (max-width:768px){/*mobile*/
+        width:100%;
+        padding:$padding-containter;
+        @include flex_column-auto;/*flex column*/
+        text-align: center;
+    }
+        
+
+
+}
+.fonctionnement-elements{
+    @media (min-width: 992px){/*descktop*/
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @media (max-width:922px){/*tab*/
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+ @media (max-width:768px){/*mobile*/
+        width:100%;
+        padding:$padding-containter;
+        @include flex_column;/*flex column*/
+        text-align: center;
+        @include margin-auto;
+    }
+    
+    
+
+}

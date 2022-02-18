@@ -1,23 +1,17 @@
-
-/*old code*/
+*{
+  box-sizing: border-box;/*boxsizing*/
+  margin-left: 0;
+  margin-right: 0;
+  list-style:none;
+  text-decoration: none;
+  font-style:normal;
+}
 
 body{
-    box-sizing: border-box;
-    padding-top: 0;
-    text-decoration: none;
-    margin:0px;
-    margin-top:$margin-top;
+  
+    margin-top:0;
+    
   }
   
 
-  footer{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    background-color: gray;
-    
-  }
-  footer a {
-    color: white;
-    text-decoration: none;
-  }
+ 

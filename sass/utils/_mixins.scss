@@ -9,7 +9,32 @@
  margin-left:15px;
  margin-right:15px;
 }
+@mixin flex_column{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+align-items: center;
+}
+@mixin flex_column-auto{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
+}
+@mixin flex_row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@mixin padding-auto{
+    padding-left:auto;
+    padding-right: auto;
+}
+@mixin elements-shadow{
+    -webkit-box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.4); 
+    box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.4);
+}
 /*@mixin border($colour:$colour-primary) {
     border: .1rem solid $colour;
 }

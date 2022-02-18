@@ -35,13 +35,28 @@
    <main>
        <aside class="fonctionnement-wrapper">
            <h1>Fonctionnement</h1>
-        <div><i>1</i><span><strong> Choisissez un restaurant</strong></span></div>   
-          <div><i>2</i><span><strong> Composez votre menu</strong></span></div> 
-           <div><i>3</i><span><strong> Dégustez au restaurant</strong></span></div>
+           <div class="fonctionnement-elements"> 
+                 <div class="fonction">
+                    <div><i class="fa-solid fa-circle-1"></i></div>
+                    <div><p class="fonction-text"><i class="fa-solid fa-mobile-screen"></i>  Choisissez un restaurant</p></div> 
+                </div>   
+                <div class="fonction">
+                     <div><i class="fa-solid fa-circle-2"></i></div>
+                     <div><p class="fonction-text"><i class="fa-solid fa-list-ul"></i></i>  Composez votre menu</p></div> 
+
+                 </div>
+                 <div class="fonction">
+                     <div><i class="fa-solid fa-circle-3"></i></div>
+                     <div><p class="fonction-text"><i class="fa-solid fa-store"></i></i>  Dégustez au restaurant</p></div> 
+
+                     </div>
+            </div><!--fin fonctionnement-elements-->
+      
           
        </aside>
        <section class="restaurant-wrapper" id="restaurants">
            <h1>Restaurants</h1>
+           <div class="restaurant-group">
            <div class="restaurant">
                <img src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du gout">
                <div class="restaurant__description">
@@ -60,6 +75,8 @@
             </div>
 
         </div>
+         </div>
+         <div class="restaurant-group">
         <div class="restaurant">
             <img src="images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant A la française">
             <div class="restaurant__description">
@@ -78,16 +95,17 @@
             </div>
 
         </div>
+    </div>
        </section>
 
    </main>
    <footer>
-       <div>
-           <!--logo blanc-->
+       <div class="logo-footer" >
+           <img  src="images\logo\ohmyfood.png">
        </div>
        
-<a href="#"><i></i> Proposer un restaurant</a>
-<a href="#"><i></i>Devenez partenaire</a>
+<a href="#"><i class="fa-solid fa-utensils"></i>   Proposer un restaurant</a>
+<a href="#"><i class="fa-solid fa-handshake-angle"></i>  Devenez partenaire</a>
 <a href="#">Mentions légales</a>
 <a href="#">Contact</a>
 
