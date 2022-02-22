@@ -22,6 +22,9 @@
     }
 }
      .restaurant-group{ /*conteneur de deux rest*/
+        & a{
+            color:black;
+        }
         @media (min-width:992px){/*tablet*/
             @include flex_row;
             width:100%;
