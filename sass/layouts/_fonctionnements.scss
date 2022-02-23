@@ -30,7 +30,8 @@
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-  
+  margin-left: auto;
+  margin-right: auto;
 
 
     @media (min-width: 992px){/*descktop*/
@@ -52,7 +53,8 @@
         padding:$padding-containter;
         @include flex_column;/*flex column*/
         text-align: center;
-        @include margin-auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     

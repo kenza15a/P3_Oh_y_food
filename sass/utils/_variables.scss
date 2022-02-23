@@ -11,3 +11,13 @@ $border-radius:15px;
 $margin-top:25px;
 $margin-bottom:25px;
 $padding-containter:5px;
+
+
+/*breakpoints*/
+/*a map*/
+$breakpoint:
+("mobile":768px,
+"tablette":922px,
+"desktop": 992px,
+);
+

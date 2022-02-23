@@ -1,9 +1,10 @@
 @mixin nav-shadow ($color){/*shadow navbar*/
-    box-shadow: -2px 10px 12px -1px $color;    
+    -webkit-box-shadow: 1px 18px 17px -4px $color; 
+box-shadow: 1px 18px 17px -4px $color;
+     
 }
 @mixin border-radius-up-only{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
 @mixin margin-auto{
     margin-left:auto;
@@ -72,3 +73,4 @@ align-items: center;
 }
 
 }
+/*media querries*/

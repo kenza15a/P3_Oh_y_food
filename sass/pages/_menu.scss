@@ -22,6 +22,22 @@
     transition: all 1ms linear;
   
 }
+.menu-title{
+    @include flex_row;
+    font-size:20px;
+    line-height: 15px;
+}
 .menu-section{ /*entrées plats ou dessert*/
+    padding: 15px;
+    line-height: 10px;
+    
+    h2{
+        color: $colour-footer;
+    font-style: normal;
+    }
+    hr{
+        border-top: 3px solid $colour-green-blue;
+        width:7%;
+    }
 
 }

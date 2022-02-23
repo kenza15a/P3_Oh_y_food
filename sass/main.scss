@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+@import "./base/typography";
 @import "./layouts/header";
 @import "./layouts/navbar";
 @import "./layouts/main";
@@ -9,6 +10,7 @@
 @import "./layouts/footer";
 @import "./componants/card";
 @import "./componants/buttons";
+@import "./componants/plate-card";
 @import "./componants/fonctionnement";
 @import "./componants/nouveau.scss";
 @import "./pages/menu";
