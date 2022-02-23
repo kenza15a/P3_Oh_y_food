@@ -1,9 +1,13 @@
-.fonctionnement-wrapper{
 
+  
+.fonctionnement-wrapper{
+    width:100%;
+    padding:$padding-containter;
+    @include flex_column-auto;
+    text-align: center;
     @media(min-width:992px){/*descktop*/
        width:100%;
         padding:$padding-containter;
-        @include flex_column-auto;
         text-align: center;}
     
     @media(max-width:922px){/*tablet*/
@@ -22,13 +26,21 @@
 
 }
 .fonctionnement-elements{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+
+
     @media (min-width: 992px){/*descktop*/
         width:100%;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    @media (max-width:922px){/*tab*/
+ 
+    @media (max-width:922px) {/*tab*/
         width:100%;
         display:flex;
         flex-direction: row;

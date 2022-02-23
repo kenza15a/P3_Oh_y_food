@@ -1,0 +1,54 @@
+.number{
+    color:white;
+    background-color: $colour-primary;
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-size: 10px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(-30%,80%);
+    
+}
+.fonction{
+    position: relative;
+    @include margin-auto;
+    margin-bottom:$margin-bottom;
+    padding:$padding-containter+10px;
+    background-color: $colour-location;
+    width:350px;
+    margin-left: 15px;
+    min-width:fit-content;
+    border-radius:$border-radius;
+    @include elements-shadow;
+
+   
+    &-text{
+        font-size: 18px;
+        font-weight: bold;
+        @include flex_row;
+        justify-content: center;
+    i{
+    margin-right: 15px;
+}
+
+    }
+    & .material-icons{
+        color:gray;
+        &:hover{
+            color:$colour-primary;
+        }
+    }
+    &.fa-regular{
+        color:gray;
+        &:hover{
+            color:$colour-primary;
+        }
+      }
+     & .fa-solid{
+        color:gray;
+        &:hover{
+            color:$colour-primary;
+        }
+      }
+}
