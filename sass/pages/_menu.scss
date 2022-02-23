@@ -1,9 +1,26 @@
 .menu-slide{  /*image du menu*/
+    width:100%;
+
+    @media (max-width:768px){
+
+        img{
+            object-fit:cover ;
+            height: 30vh;
+            width:100%
+    
+        }
+    }
+    
 
 }
 .menu-carte{ /*la section qui rergoupe les sous sections menu*/
     background-color: $colour-header;
-
+    @include margin-auto;
+   @include  border-radius-up-only;
+    width:100%;
+    transform: translate(0,-50px);
+    transition: all 1ms linear;
+  
 }
 .menu-section{ /*entrées plats ou dessert*/
 

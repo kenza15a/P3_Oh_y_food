@@ -1,6 +1,10 @@
 @mixin nav-shadow ($color){/*shadow navbar*/
     box-shadow: -2px 10px 12px -1px $color;    
 }
+@mixin border-radius-up-only{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 @mixin margin-auto{
     margin-left:auto;
     margin-right:auto;

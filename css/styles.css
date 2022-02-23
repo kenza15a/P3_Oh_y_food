@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*header*/
 * {
   box-sizing: border-box;
@@ -538,6 +539,34 @@ main {
   right: 15px;
   top: 15px;
   width: fit-content;
+}
+
+.menu-slide {
+  /*image du menu*/
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .menu-slide img {
+    object-fit: cover;
+    height: 30vh;
+    width: 100%;
+  }
+}
+
+.menu-carte {
+  /*la section qui rergoupe les sous sections menu*/
+  background-color: #f6f6f6;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  transform: translate(0, -50px);
+  transition: all 1ms linear;
+}
+
+.menu-section {
+  /*entrées plats ou dessert*/
 }
 
 /*# sourceMappingURL=styles.css.map */
