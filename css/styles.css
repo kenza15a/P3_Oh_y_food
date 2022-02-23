@@ -1,37 +1,4 @@
-/*@mixin border($colour:$colour-primary) {
-    border: .1rem solid $colour;
-}
-
-@mixin img-ratio {
-    width: 100%;
-        display: block;
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        & img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-        }
-}
-
-@mixin btn {
-    padding: $grid-gutter;
-    @include border;
-    color: $colour-primary;
-    background: $colour-secondary;
-    cursor: pointer;
-    &:hover{
-        background: $colour-primary;
-        color: $colour-accent;
-    }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
-    }
-}*/
+/*header*/
 * {
   box-sizing: border-box;
   /*boxsizing*/
@@ -44,6 +11,7 @@
 
 body {
   margin-top: 0;
+  height: 100vh;
 }
 
 header {
@@ -51,6 +19,7 @@ header {
   padding-bottom: 15px;
   text-align: center;
   background-color: #f6f6f6;
+  width: 100vw;
 }
 header .presentation {
   display: flex;
@@ -60,6 +29,25 @@ header .presentation {
 }
 header .presentation-location {
   background-color: #eaeaea;
+}
+@media (min-width: 992px) {
+  header {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 50vh;
+  }
+  header .presentation {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    width: 100%;
+  }
+  header .presentation-location {
+    background-color: #eaeaea;
+  }
 }
 
 nav {
@@ -142,6 +130,9 @@ main {
 .restaurant-group {
   /*conteneur de deux rest*/
 }
+.restaurant-group a {
+  color: black;
+}
 @media (min-width: 992px) {
   .restaurant-group {
     /*tablet*/
@@ -172,14 +163,19 @@ main {
   }
 }
 
+.fonctionnement-wrapper {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
 @media (min-width: 992px) {
   .fonctionnement-wrapper {
     /*descktop*/
     width: 100%;
     padding: 5px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     text-align: center;
   }
 }
@@ -207,6 +203,12 @@ main {
   }
 }
 
+.fonctionnement-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 @media (min-width: 992px) {
   .fonctionnement-elements {
     /*descktop*/
@@ -341,6 +343,20 @@ main {
   }
 }
 
+.restaurant {
+  position: relative;
+}
+.restaurant a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.restaurant a p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-between;
+}
 @media (min-width: 992px) {
   .restaurant {
     display: flex;
@@ -405,6 +421,26 @@ main {
   }
 }
 
+/*i{
+  color: rgb(0, 0, 0);
+
+
+  &.fa-regular {
+
+
+      &.fa-heart{
+
+
+        &:hover{
+            color:linear-gradient($colour-secondary,$colour-primary);
+            transition: all 2s ease-out;
+            cursor: pointer; 
+
+
+      }
+      }
+    }
+}*/
 .button-shoutout {
   /*bouton page d'accueil*/
   text-decoration: none;
@@ -437,7 +473,20 @@ main {
   /*bouton de commande*/
 }
 
+.number {
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 10px 12px;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-30%, 80%);
+}
+
 .fonction {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
@@ -449,14 +498,46 @@ main {
   border-radius: 15px;
   -webkit-box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 .fonction-text {
   font-size: 18px;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+}
+.fonction-text i {
+  margin-right: 15px;
+}
+.fonction .material-icons {
+  color: gray;
+}
+.fonction .material-icons:hover {
+  color: #9356DC;
+}
+.fonction.fa-regular {
+  color: gray;
+}
+.fonction.fa-regular:hover {
+  color: #9356DC;
+}
+.fonction .fa-solid {
+  color: gray;
+}
+.fonction .fa-solid:hover {
+  color: #9356DC;
+}
+
+.nouveau {
+  color: #008766;
+  background-color: #99e2d0;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: fit-content;
 }
 
 /*# sourceMappingURL=styles.css.map */

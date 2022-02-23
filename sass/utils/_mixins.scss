@@ -35,37 +35,36 @@ align-items: center;
     -webkit-box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.4); 
     box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.4);
 }
-/*@mixin border($colour:$colour-primary) {
-    border: .1rem solid $colour;
+@mixin padding-card-description{
+    padding-left: 20px;
+        padding-right: 20px;
+}
+@mixin gradient-background{
+    background: linear-gradient($colour-secondary,$colour-primary);
+}
+/*header*/
+@mixin descktop-header{
+    @media (min-width:992px){
+    margin-top:$margin-top;
+  padding-bottom:15px;
+  text-align:center;
+  background-color:$colour-header;
+  width:100vw;
+  height: 50vh;
+  .presentation{
+    display:flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    width:100%;
+   
+   
+    &-location{
+      background-color: $colour-location;
+      
+    
+  }
+
+  }
 }
 
-@mixin img-ratio {
-    width: 100%;
-        display: block;
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        & img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-        }
 }
-
-@mixin btn {
-    padding: $grid-gutter;
-    @include border;
-    color: $colour-primary;
-    background: $colour-secondary;
-    cursor: pointer;
-    &:hover{
-        background: $colour-primary;
-        color: $colour-accent;
-    }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
-    }
-}*/

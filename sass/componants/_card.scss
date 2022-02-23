@@ -1,4 +1,16 @@
 .restaurant{
+    position: relative;
+
+    a{
+        @include padding-card-description;
+        p{
+          @include flex_row;  
+          justify-content: space-between;
+
+        }
+   
+
+    }
     @media (min-width:992px){
         @include flex_column-auto;
         border-radius: $border-radius;
@@ -52,3 +64,24 @@
      
   }
   
+  /*i{
+    color: rgb(0, 0, 0);
+ 
+    
+    &.fa-regular {
+        
+ 
+        &.fa-heart{
+          
+           
+          &:hover{
+              color:linear-gradient($colour-secondary,$colour-primary);
+              transition: all 2s ease-out;
+              cursor: pointer; 
+            
+            
+        }
+        }
+      }
+  }*/
+ 

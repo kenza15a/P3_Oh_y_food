@@ -1,8 +1,9 @@
 header{
   margin-top:$margin-top;
- padding-bottom:15px;
+  padding-bottom:15px;
   text-align:center;
   background-color:$colour-header;
+  width:100vw;
   .presentation{
     display:flex;
     flex-direction: column;
@@ -16,6 +17,7 @@ header{
     
   }
 }
+@include descktop-header;
 }
 
 
