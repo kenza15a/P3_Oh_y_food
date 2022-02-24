@@ -1,5 +1,10 @@
 
 .plat{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     border-radius: $border-radius;
     margin-bottom: 15px;
     @include elements-shadow;
@@ -7,8 +12,48 @@
     margin-left: 15px;
     margin-right: 15px;
     line-height: 5px;
+    cursor:pointer;
+    &-textes{
+        width:100%;
+    }
     &-description{
         @include flex-row;
         justify-content: space-between;
     }
+    &-check{
+        position:absolute;
+        overflow: hidden;
+        width:0%;
+        right:0;
+        bottom:0;
+        top:0px;
+        height:100%;
+        width:20%;
+        padding: 30px;
+        background-color:$colour-green-blue;
+        color:antiquewhite;
+        font-size: 40px;
+        border-radius: 0px 15px 15px 0px;
+        opacity: 0;
+        transform :translate(10px,0);
+        transition: all 300ms ease-in;
+        transform-origin: right;
+      
+
+
+    }
+    &:active{
+        & .plat-check{
+            opacity: (1);
+     transform: scale(1);
+            
+
+        }
+        & .plat-textes{
+            width:75%;
+        }
+        
+
+    }
+    
 }

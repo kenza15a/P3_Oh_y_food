@@ -5,17 +5,18 @@
     padding:$padding-containter;
     @include flex_column-auto;
     text-align: center;
-    @media(min-width:992px){/*descktop*/
+    @include descktop/*descktop*/
+    {
        width:100%;
         padding:$padding-containter;
         text-align: center;}
     
-    @media(max-width:922px){/*tablet*/
+    @include tablet {/*tablet*/
         width:100%;
          padding:$padding-containter;
          @include flex_column-auto;
          text-align: center;}
-    @media (max-width:768px){/*mobile*/
+    @include mobile{/*mobile*/
         width:100%;
         padding:$padding-containter;
         @include flex_column-auto;/*flex column*/
@@ -34,21 +35,21 @@
   margin-right: auto;
 
 
-    @media (min-width: 992px){/*descktop*/
+   @include descktop{/*descktop*/
         width:100%;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
     }
  
-    @media (max-width:922px) {/*tab*/
+    @include tablet {/*tab*/
         width:100%;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
- @media (max-width:768px){/*mobile*/
+ @include mobile{/*mobile*/
         width:100%;
         padding:$padding-containter;
         @include flex_column;/*flex column*/

@@ -3,17 +3,17 @@
     & h1{
         text-align: center;
     }
-    @media (max-width:992px){/*tablet*/
+    @include descktop{/*descktop*/
         @include flex_column-auto;
         width:100%;
          margin-left:15px;
        }
-    @media (max-width:922px){/*tablet*/
+    @include tablet{/*tablet*/
     @include flex_column-auto;
      width:100%;
       margin-left: 15px;
     }
-    @media (max-width:768px){
+    @include mobile{
         @include flex_column;
          width: 100%;
          margin-left: auto;
@@ -25,17 +25,17 @@
         & a{
             color:black;
         }
-        @media (min-width:992px){/*tablet*/
+        @include descktop{/*tablet*/
             @include flex_row;
             width:100%;
             margin-left:15px;
          
            }
-        @media (max-width:922px){/*tablet*/
+        @include tablet{/*tablet*/
             @include flex_column-auto;
             width:100%;
         }
-        @media (max-width:768px){
+        @include mobile{
             @include flex_column;
              width:100%;
           

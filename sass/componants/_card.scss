@@ -11,7 +11,21 @@
    
 
     }
-    @media (min-width:992px){
+    @include flex_column-auto;
+        border-radius: $border-radius;
+         @include margin-auto;
+         @include elements-shadow;
+         margin-bottom: 15px;
+         width:40%;
+         min-width: fit-content;
+        
+        & img{
+            object-fit:cover ;
+            border-radius: 15px 15px 0px 0px;
+            height: 200px;
+            width:100%
+        }
+    @include descktop{ //descktop breakpoint
         @include flex_column-auto;
         border-radius: $border-radius;
          @include margin-auto;
@@ -29,7 +43,7 @@
     }
 
 
-    @media (max-width:922px){
+    @include tablet{ //tablet breakpoint
         @include flex_column-auto;
         border-radius: $border-radius;
         @include margin-auto;
@@ -45,7 +59,7 @@
        }
 }
     
-    @media (max-width:768px){
+    @include mobile{ //mobile breakpoint
     @include flex_column-auto;
      border-radius: $border-radius;
      @include margin-auto;
@@ -64,24 +78,5 @@
      
   }
   
-  /*i{
-    color: rgb(0, 0, 0);
  
-    
-    &.fa-regular {
-        
- 
-        &.fa-heart{
-          
-           
-          &:hover{
-              color:linear-gradient($colour-secondary,$colour-primary);
-              transition: all 2s ease-out;
-              cursor: pointer; 
-            
-            
-        }
-        }
-      }
-  }*/
  

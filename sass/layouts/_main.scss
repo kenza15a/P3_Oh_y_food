@@ -1,18 +1,15 @@
 main{
-  /*  @media(min-width:992px){
-        display:flex;
-        flex-direction: row-reverse;
+    @include descktop{
+        @include flex_column-auto;
         width:100%;
-        padding-left: 0;
-         padding-right: 0;
-        }*/
-    @media(max-width:922px){
+        }
+    @include tablet{
         @include flex_column-auto;
     width:100%;
     padding-left: 0;
      padding-right: 0;
     }
-    @media(max-width:768px){
+    @include mobile{
     @include flex_column-auto;
     width:100%;}
    

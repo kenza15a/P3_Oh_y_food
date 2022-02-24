@@ -48,29 +48,29 @@ align-items: center;
     background: linear-gradient($colour-secondary,$colour-primary);
 }
 /*header*/
-@mixin descktop-header{
-    @media (min-width:992px){
-    margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-  height: 50vh;
-  .presentation{
-    display:flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    width:100%;
-   
-   
-    &-location{
-      background-color: $colour-location;
-      
-    
-  }
 
-  }
-}
+   
 
-}
+
 /*media querries*/
+$breakpoints:(
+"descktop":992px,
+"tablet":922px,
+"mobile":768px,
+
+);
+@mixin descktop{
+    @media (min-width: map-get($breakpoints,"descktop")){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width: map-get($breakpoints,"tablet")){
+        @content;
+    }
+}
+@mixin mobile{
+    @media (max-width: map-get($breakpoints,"mobile")){
+        @content;
+    }
+}
