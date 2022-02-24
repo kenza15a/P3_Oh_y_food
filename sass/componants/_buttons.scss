@@ -9,10 +9,12 @@
         padding:15px;
         width:fit-content;
         margin-top:$margin-top;
-        cursor:pointer;
+        position: relative;
+         z-index: 1;
        /*animation*/
-        transform: scale(1);
-         transition: transform 400ms;
+        /*transform: scale(1);
+         transition: transform 400ms;*/
+
     
         @include margin-auto;
         & a{
@@ -21,13 +23,27 @@
             font-size:20px;
            
         }
+        &::after{
+            border-radius: 40px;
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(lighten($colour-secondary, 5) , lighten($colour-primary, 5));
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+        }
         /*animation*/
         &:hover {
-            transform: scale(1.15);
+            &::after {
+                opacity: 1;
         }
       
       }
-
+    }
 
 .button_commander{ /*bouton de commande*/
     text-decoration: none;

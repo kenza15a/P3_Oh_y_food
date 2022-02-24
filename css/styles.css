@@ -473,10 +473,11 @@ main {
   padding: 15px;
   width: fit-content;
   margin-top: 25px;
-  cursor: pointer;
+  position: relative;
+  z-index: 1;
   /*animation*/
-  transform: scale(1);
-  transition: transform 400ms;
+  /*transform: scale(1);
+   transition: transform 400ms;*/
   margin-left: auto;
   margin-right: auto;
   /*animation*/
@@ -486,8 +487,21 @@ main {
   color: #fff;
   font-size: 20px;
 }
-.button-shoutout:hover {
-  transform: scale(1.15);
+.button-shoutout::after {
+  border-radius: 40px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#ff93e1, #a16be0);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+.button-shoutout:hover::after {
+  opacity: 1;
 }
 
 .button_commander {
