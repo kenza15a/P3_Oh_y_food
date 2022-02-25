@@ -1,11 +1,13 @@
 .menu-slide{  /*image du menu*/
     width:100%;
+    height: 40vh;
     @include descktop{
-
         img{
-            object-fit:cover ;
-            height: 30vh;
-            width:100%
+            height: 250px;
+            width:100%;
+            object-fit:cover;
+            position: fixed; 
+            left:0;
     
         }
     }
@@ -15,11 +17,12 @@
             object-fit:cover ;
             height: 30vh;
             width:100%
+            
     
         }
     }
 
-    @media (max-width:768px){
+    @include mobile{
 
         img{
             object-fit:cover ;
@@ -38,17 +41,66 @@
     width:100%;
     transform: translate(0,-50px);
     transition: all 1ms linear;
+    & .menu-title{
+        @include flex_row;
+        font-size:20px;
+        line-height: 15px;
+        @include descktop{
+            justify-content: center;
+        }
+    }
+    & .menu-heart{
+        padding-top: 30px; 
+        @include descktop{
+            margin-left: 200px;
+        }
+      
+     }
+     & .menu-section-wrapper{
+         width:100%;
+         @include descktop{
+             width:100%;
+             @include flex-row;
+             justify-content: space-between;
+         }
+     }
+    & .menu-section{ /*entrées plats ou dessert*/
+        padding: 15px;
+        line-height: 10px;
+        height: fit-content;
+        margin-left: 25px;
+        
+        h2{
+            color: $colour-footer;
+        font-style: normal;
+        }
+        hr{
+            border-top: 3px solid $colour-green-blue;
+            width:7%;
+        }
+        @include descktop{
+            margin-left: 15px;
+            width:30%;
+            
+        }
+        @include tablet{
+            margin-left: 15px;
+            
+        }
+        @include mobile{
+            margin-left: 25px;
+            
+        }
+    
+    }
   
 }
-.menu-title{
-    @include flex_row;
-    font-size:20px;
-    line-height: 15px;
-}
+
 .menu-section{ /*entrées plats ou dessert*/
     padding: 15px;
     line-height: 10px;
     height: fit-content;
+    margin-left: 25px;
     
     h2{
         color: $colour-footer;
@@ -58,23 +110,17 @@
         border-top: 3px solid $colour-green-blue;
         width:7%;
     }
-   /* @include descktop{
-        & #entree, & #plats,& #desserts {
-        height: 20px;
-        transition: height 1s;
-        overflow:hidden;
-        &:hover
-        {
+    @include descktop{
+        margin-left: 15px;
         
+    }
+    @include tablet{
+        margin-left: 15px;
         
-        height: 100vh;
-        }
+    }
+    @include mobile{
+        margin-left: 25px;
+        
+    }
 
-        }
-        
-    }*/
-
-}
-.menu-heart{
-   padding-top: 30px; 
 }
