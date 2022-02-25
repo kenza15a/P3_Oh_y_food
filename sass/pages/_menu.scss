@@ -1,5 +1,23 @@
 .menu-slide{  /*image du menu*/
     width:100%;
+    @include descktop{
+
+        img{
+            object-fit:cover ;
+            height: 30vh;
+            width:100%
+    
+        }
+    }
+   @include tablet{
+
+        img{
+            object-fit:cover ;
+            height: 30vh;
+            width:100%
+    
+        }
+    }
 
     @media (max-width:768px){
 
@@ -30,6 +48,7 @@
 .menu-section{ /*entrées plats ou dessert*/
     padding: 15px;
     line-height: 10px;
+    height: fit-content;
     
     h2{
         color: $colour-footer;
@@ -39,6 +58,21 @@
         border-top: 3px solid $colour-green-blue;
         width:7%;
     }
+   /* @include descktop{
+        & #entree, & #plats,& #desserts {
+        height: 20px;
+        transition: height 1s;
+        overflow:hidden;
+        &:hover
+        {
+        
+        
+        height: 100vh;
+        }
+
+        }
+        
+    }*/
 
 }
 .menu-heart{

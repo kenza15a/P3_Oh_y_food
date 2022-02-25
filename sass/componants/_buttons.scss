@@ -11,10 +11,7 @@
         margin-top:$margin-top;
         position: relative;
          z-index: 1;
-       /*animation*/
-        /*transform: scale(1);
-         transition: transform 400ms;*/
-
+       
     
         @include margin-auto;
         & a{
