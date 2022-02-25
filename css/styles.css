@@ -551,6 +551,13 @@ nav .logo {
   justify-content: space-around;
   justify-content: space-between;
 }
+.plat-description p, .plat-description h4 {
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
 .plat-check {
   position: absolute;
   overflow: hidden;

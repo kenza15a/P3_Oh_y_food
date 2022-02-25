@@ -15,10 +15,21 @@
     cursor:pointer;
     &-textes{
         width:100%;
+        
     }
     &-description{
         @include flex-row;
         justify-content: space-between;
+        p,h4{
+            
+            max-width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 20px;
+        }
+        
+       
     }
     &-check{
         position:absolute;
@@ -52,6 +63,7 @@
         & .plat-textes{
             width:75%;
         }
+        
         
 
     }
