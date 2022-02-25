@@ -1,17 +1,19 @@
 
 .restaurant-wrapper{
+    padding: 0 15px 15px 0;
     & h1{
         text-align: center;
     }
     @include descktop{/*descktop*/
-        @include flex_column-auto;
+        @include flex_column;
         width:100%;
-         margin-left:15px;
+       
        }
     @include tablet{/*tablet*/
-    @include flex_column-auto;
+    @include flex_column;
      width:100%;
-      margin-left: 15px;
+     padding-left: 20px;
+     
     }
     @include mobile{
         @include flex_column;

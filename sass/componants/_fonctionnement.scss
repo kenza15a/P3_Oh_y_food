@@ -21,6 +21,7 @@
     min-width:fit-content;
     border-radius:$border-radius;
     @include elements-shadow;
+    margin-right: 15px;
 
    
     &-text{

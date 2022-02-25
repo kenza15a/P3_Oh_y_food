@@ -1,4 +1,7 @@
 main{
+    @include flex_column-auto;
+    width:100%;
+   
     @include descktop{
         @include flex_column-auto;
         width:100%;
