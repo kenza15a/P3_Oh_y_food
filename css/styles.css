@@ -655,6 +655,13 @@ nav .logo {
   width: 100%;
   height: 40vh;
 }
+.menu-slide img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+}
 @media (min-width: 992px) {
   .menu-slide img {
     height: 250px;
@@ -665,16 +672,24 @@ nav .logo {
   }
 }
 @media (max-width: 922px) {
+  .menu-slide {
+    height: 80vh;
+    width: 100vw;
+  }
   .menu-slide img {
     object-fit: cover;
-    height: 30vh;
+    height: 100%;
     width: 100%;
   }
 }
 @media (max-width: 768px) {
+  .menu-slide {
+    height: 40vh;
+    width: 100vw;
+  }
   .menu-slide img {
     object-fit: cover;
-    height: 30vh;
+    height: 250px;
     width: 100%;
   }
 }
@@ -695,11 +710,24 @@ nav .logo {
   flex-wrap: wrap;
   justify-content: space-around;
   font-size: 20px;
-  line-height: 15px;
+  line-height: 25px;
 }
 @media (min-width: 992px) {
   .menu-carte .menu-title {
     justify-content: center;
+  }
+}
+@media (max-width: 922px) {
+  .menu-carte .menu-title {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .menu-carte .menu-title {
+    padding-left: 15px;
+    justify-content: flex-start;
+    font-size: 15px;
+    line-height: 50px;
   }
 }
 .menu-carte .menu-heart {
@@ -708,6 +736,16 @@ nav .logo {
 @media (min-width: 992px) {
   .menu-carte .menu-heart {
     margin-left: 200px;
+  }
+}
+@media (max-width: 922px) {
+  .menu-carte .menu-heart {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-carte .menu-heart {
+    margin-left: 50px;
   }
 }
 .menu-carte .menu-section-wrapper {

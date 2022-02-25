@@ -1,6 +1,14 @@
 .menu-slide{  /*image du menu*/
     width:100%;
     height: 40vh;
+    img{
+        height: 250px;
+        width:100%;
+        object-fit:cover;
+        position: fixed; 
+        left:0;
+
+    }
     @include descktop{
         img{
             height: 250px;
@@ -12,10 +20,11 @@
         }
     }
    @include tablet{
-
+         height:80vh;
+         width:100vw;
         img{
             object-fit:cover ;
-            height: 30vh;
+            height:100%;
             width:100%
             
     
@@ -23,10 +32,11 @@
     }
 
     @include mobile{
-
+        height:40vh;
+        width:100vw;
         img{
             object-fit:cover ;
-            height: 30vh;
+            height: 250px;
             width:100%
     
         }
@@ -44,15 +54,31 @@
     & .menu-title{
         @include flex_row;
         font-size:20px;
-        line-height: 15px;
+        line-height: 25px;
         @include descktop{
             justify-content: center;
+        }
+        @include tablet{
+            justify-content: center;
+        }
+        @include mobile{
+           padding-left:15px ;
+            justify-content: flex-start;
+            font-size: 15px;
+            line-height: 50px;
+        
         }
     }
     & .menu-heart{
         padding-top: 30px; 
         @include descktop{
             margin-left: 200px;
+        }
+        @include tablet{
+            margin-left: 200px;
+        }
+        @include mobile{
+            margin-left: 50px;
         }
       
      }
