@@ -8,6 +8,31 @@
     top:0;
     left:0;
     transform: translate(-30%,80%);
+    @include descktop{
+        color:white;
+    background-color: $colour-primary;
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-size: 10px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(-30%,80%);
+    }
+    @include tablet {
+        left:-10px
+    }
+   @include mobile{
+    color:white;
+    background-color: $colour-primary;
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-size: 10px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(-30%,80%);
+   }
     
 }
 .fonction{
