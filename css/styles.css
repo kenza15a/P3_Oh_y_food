@@ -713,8 +713,6 @@ main {
   height: 250px;
   width: 100%;
   object-fit: cover;
-  position: fixed;
-  left: 0;
 }
 @media (min-width: 992px) {
   .menu-slide img {
@@ -727,12 +725,12 @@ main {
 }
 @media (max-width: 922px) {
   .menu-slide {
-    height: 80vh;
+    height: 40vh;
     width: 100vw;
   }
   .menu-slide img {
     object-fit: cover;
-    height: 100%;
+    height: inherit;
     width: 100%;
   }
 }
@@ -743,7 +741,7 @@ main {
   }
   .menu-slide img {
     object-fit: cover;
-    height: 30vh;
+    height: inherit;
     width: 100%;
   }
 }

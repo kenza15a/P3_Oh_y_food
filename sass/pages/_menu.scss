@@ -16,8 +16,6 @@
         height: 250px;
         width:100%;
         object-fit:cover;
-        position: fixed; 
-        left:0;
 
     }
     @include descktop{
@@ -31,11 +29,11 @@
         }
     }
    @include tablet{
-         height:80vh;
+         height:40vh;
          width:100vw;
         img{
             object-fit:cover ;
-            height:100%;
+            height:inherit;
             width:100%
             
     
@@ -47,7 +45,7 @@
         width:100vw;
         img{
             object-fit:cover;
-           height:30vh;
+           height:inherit;
             width:100%
     
         }
@@ -58,7 +56,7 @@
 .menu-carte{ /*la section qui rergoupe les sous sections menu*/
     background-color: $colour-header;
     @include margin-auto;
-   @include  border-radius-up-only;
+    @include  border-radius-up-only;
     width:100%;
     transform: translate(0,-50px);
     transition: all 1ms linear;
@@ -68,6 +66,7 @@
         line-height: 25px;
         @include descktop{
             justify-content: center;
+        
         }
         @include tablet{
             justify-content: center;
@@ -77,6 +76,7 @@
             justify-content: flex-start;
             font-size: 15px;
             line-height: 50px;
+            
         
         }
     }
