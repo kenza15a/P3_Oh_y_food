@@ -20,6 +20,10 @@ body {
   width: 100vw;
 }
 
+/*@import "./vendors/fontawesome/scss/fontawesome.scss";
+@import "./vendors/fontawesome/scss/brands.scss";
+@import "./vendors/fontawesome/scss/regular.scss";
+@import "./vendors/fontawesome/scss/solid.scss";*/
 /*police de caractere*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -274,6 +278,9 @@ main {
   }
 }
 
+footer i {
+  margin-right: 5px;
+}
 @media (min-width: 992px) {
   footer {
     /*descktop*/
@@ -352,7 +359,10 @@ main {
     font-size: 15px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     justify-content: flex-start;
+    margin-bottom: 20px;
   }
 }
 
@@ -851,10 +861,7 @@ main {
   line-height: 10px;
   height: fit-content;
   margin-left: 25px;
-  animation-name: menu-section;
-  animation-duration: 1s;
-  animation-delay: 100ms;
-  animation-timing-function: ease-in-out;
+  animation: menu-section 1200ms 200ms ease-in-out;
 }
 .menu-section h2 {
   color: #353535;

@@ -147,10 +147,8 @@
         border-top: 3px solid $colour-green-blue;
         width:7%;
     }
-    animation-name: menu-section;
-    animation-duration: 1s;
-    animation-delay: 100ms;
-    animation-timing-function: ease-in-out;
+    animation: menu-section 1200ms 200ms ease-in-out;
+  
     @include descktop{
         margin-left: 15px;
         
