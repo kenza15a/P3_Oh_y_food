@@ -672,7 +672,7 @@ footer i {
   bottom: 0;
   top: 0px;
   height: 100%;
-  width: 20%;
+  width: 25%;
   padding: 30px;
   background-color: #99e2d0;
   color: antiquewhite;
@@ -697,6 +697,49 @@ footer i {
 }
 .plat:active i {
   transform: translate(0, 0) rotate(360deg);
+}
+@media (max-width: 768px) {
+  .plat-textes {
+    width: 100%;
+  }
+  .plat-description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .plat-description p, .plat-description h4 {
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+  }
+  .plat-check {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    height: 100%;
+    width: 40%;
+    background-color: #99e2d0;
+    color: #fff;
+    font-size: 40px;
+    border-radius: 0px 15px 15px 0px;
+    opacity: 0;
+    transform: translate(10px, 0);
+    transition: all 200ms ease-in-out;
+    transform-origin: right;
+  }
+  .plat:active .plat-check {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .plat:active .plat-textes {
+    width: 80%;
+  }
 }
 @media (max-width: 922px) {
   .plat-textes {
