@@ -1,6 +1,5 @@
 @mixin nav-shadow ($color){/*shadow navbar*/
-    -webkit-box-shadow: 1px 18px 17px -4px $color; 
-box-shadow: 1px 18px 17px -4px $color;
+box-shadow: 1px 180px 17px -4px $color;
      
 }
 @mixin border-radius-up-only{

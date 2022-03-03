@@ -49,23 +49,155 @@
         transform :translate(10px,0);
         transition: all 300ms ease-in;
         transform-origin: right;
+        & i{
+            transform: translate(10px,0) rotate(0);
+            transform-origin: center;
+            transition: all 250ms  ease-in;
+        }
       
 
 
     }
     &:active{
-        & .plat-check{
+        &  .plat-check{
+
             opacity: (1);
-     transform: scale(1);
+            transform: scale(1);
             
 
         }
         & .plat-textes{
             width:75%;
         }
+        & i{
+
+            transform: translate(0,0) rotate(360deg);
+            
+         
+          
+        }
         
         
 
     }
+    @include tablet{
+        &-textes{
+            width:100%;
+            
+        }
+        &-description{
+            @include flex-row;
+            justify-content: space-between;
+            p,h4{ 
+                max-width: 80%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 20px;
+            }
+            
+           
+        }
+        &-check{
+            position:absolute;
+            overflow: hidden;
+            right:0;
+            bottom:0;
+            top:0px;
+            height:100%;
+            width:15%;
+            padding: 30px;
+            background-color:$colour-green-blue;
+            color:$colour-white;
+            font-size: 40px;
+            border-radius: 0px 15px 15px 0px;
+            opacity: 0;
+            transform :translate(10px,0);
+            transition: all 200ms ease-in-out;
+            transform-origin: right;
+          
+    
+    
+        }
+        &:active {
+            &  .plat-check{
+                opacity: (1);
+                transform: scale(1);
+                
+    
+            }
+            & .plat-textes{
+                width:80%;
+            }
+            
+            
+    
+        }
+    }
+    @include descktop{
+        &-textes{
+            width:100%;
+            h4{
+                max-width: 80%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 20px;
+            }
+            
+        }
+        &-description{
+            @include flex-row;
+            justify-content: space-between;
+            p,h4{ 
+                max-width: 70%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 20px;
+            }
+            
+           
+        }
+        &-check{
+            position:absolute;
+            overflow: hidden;
+            right:0;
+            bottom:0;
+            top:0px;
+            height:100%;
+            width:25%;
+            padding: 40px 20px 40px 10px;
+            background-color:$colour-green-blue;
+            color:$colour-white;
+            font-size: 40px;
+            border-radius: 0px 15px 15px 0px;
+            opacity: 0;
+            transform :translate(10px,0);
+            transition: all 200ms ease-in-out;
+            transform-origin: right;
+          
+    
+    
+        }
+        &:active {
+            &  .plat-check{
+                opacity: (1);
+                transform: scale(1);
+                
+    
+            }
+            & .plat-textes{
+                width:70%;
+            }
+            
+            
+    
+        }
+    }
+    
     
 }
+
+
+

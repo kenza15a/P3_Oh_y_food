@@ -1,4 +1,5 @@
 .restaurant{
+    
     position: relative;
 
     a{
@@ -6,11 +7,25 @@
         p{
           @include flex_row;  
           justify-content: space-between;
+          i{
+              &.fa-heart{
+                  font-weight: 100;
+                  color:black;
+                  transform:all;
+                  
+                  &:hover{
+                    font-weight: 900; 
 
+                    
+              }
+            }
+          }
+          
         }
+    }
    
 
-    }
+    
     @include flex_column-auto;
         border-radius: $border-radius;
          @include margin-auto;

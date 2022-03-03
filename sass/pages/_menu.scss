@@ -1,7 +1,21 @@
 @keyframes menu-section{ /*animation menu*/
+    0% {
+        opacity:0;
+       
+
+    }
+    50% {
+        opacity:0.5;
+        
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes menu-section-one{ /*animation par section*/
     from {
         opacity:0;
-        transform: translate(0,5%); 
+        transform: translate(0,20%); 
 
     }
     to {
@@ -147,7 +161,9 @@
         border-top: 3px solid $colour-green-blue;
         width:7%;
     }
-    animation: menu-section 1200ms 200ms ease-in-out;
+   // animation: menu-section 2s  ease-in-out;
+    
+     
   
     @include descktop{
         margin-left: 15px;
@@ -164,4 +180,15 @@
         
     }
 
+}
+#entrees{
+    animation: menu-section-one 600ms ease-in-out;
+}
+ #plats{
+     
+    animation: menu-section-one 1s   ease-in-out;
+}
+ #desserts{
+    
+    animation: menu-section-one 1.5s  ease-in-out;
 }
