@@ -96,14 +96,76 @@
     }
     & .menu-heart{
         padding-top: 30px; 
+        i{
+            font-size:25px;
+            cursor: pointer;
+            &.fa-heart{
+              font-weight: 100;
+              cursor: pointer;
+              background-color: black;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+                &:active{
+                  font-weight: 900; 
+                  background: linear-gradient($colour-secondary,$colour-primary);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
+                  animation: icone-hover 3s ease-in-out both;  
+            }
+          }
+        }
         @include descktop{
             margin-left: 200px;
+            i{
+             
+                &.fa-heart{
+                  
+                    &:hover{
+                      font-weight: 900; 
+                      background: linear-gradient($colour-secondary,$colour-primary);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
+                      animation: icone-hover 3s ease-in-out both;  
+                }
+              }
+            }
         }
         @include tablet{
             margin-left: 200px;
+            i{
+             
+                &.fa-heart{
+                  
+                    &:hover{
+                      font-weight: 900; 
+                      background: linear-gradient($colour-secondary,$colour-primary);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
+                      animation: icone-hover 3s ease-in-out both;  
+                }
+              }
+            }
         }
         @include mobile{
             margin-left: 50px;
+            i{
+                font-size:25px;
+                cursor: pointer;
+                &.fa-heart{
+                  font-weight: 100;
+                  cursor: pointer;
+                  background-color: black;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                    &:active{
+                      font-weight: 900; 
+                      background: linear-gradient($colour-secondary,$colour-primary);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
+                      animation: icone-hover 3s ease-in-out both;  
+                }
+              }
+            }
         }
       
      }

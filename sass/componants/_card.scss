@@ -8,21 +8,57 @@
           @include flex_row;  
           justify-content: space-between;
           i{
+              font-size:25px;
+              cursor: pointer;
               &.fa-heart{
-                  font-weight: 100;
-                  color:black;
-                  transform:all;
-                  
+                font-weight: 100;
+                cursor: pointer;
+                background-color: black;
+	            -webkit-background-clip: text;
+	            -webkit-text-fill-color: transparent;
                   &:hover{
                     font-weight: 900; 
+                    background: linear-gradient($colour-secondary,$colour-primary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
+                    animation: icone-hover 5s ease-in-out both;  
+              }
+              @include mobile{
+                &:active{
+                    font-weight: 900; 
+                    background: linear-gradient($colour-secondary,$colour-primary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
+                    animation: icone-hover 5s ease-in-out both; 
 
-                    
               }
             }
           }
           
         }
     }
+}
+    @keyframes icone-hover {
+        0%{
+            opacity: 0;
+        }
+        20%{
+            opacity: 0.30;
+            
+        }
+        50%{
+           opacity:  0.50;
+        }
+        70%{
+            opacity:0.70;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+        
+    
    
 
     

@@ -436,13 +436,49 @@ footer i {
   justify-content: space-around;
   justify-content: space-between;
 }
+.restaurant a p i {
+  font-size: 25px;
+  cursor: pointer;
+}
 .restaurant a p i.fa-heart {
   font-weight: 100;
-  color: black;
-  transform: all;
+  cursor: pointer;
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurant a p i.fa-heart:hover {
   font-weight: 900;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
+  animation: icone-hover 5s ease-in-out both;
+}
+@media (max-width: 768px) {
+  .restaurant a p i.fa-heart:active {
+    font-weight: 900;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
+    animation: icone-hover 5s ease-in-out both;
+  }
+}
+@keyframes icone-hover {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .restaurant img {
   object-fit: cover;
@@ -1035,19 +1071,69 @@ footer i {
 .menu-carte .menu-heart {
   padding-top: 30px;
 }
+.menu-carte .menu-heart i {
+  font-size: 25px;
+  cursor: pointer;
+}
+.menu-carte .menu-heart i.fa-heart {
+  font-weight: 100;
+  cursor: pointer;
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-carte .menu-heart i.fa-heart:active {
+  font-weight: 900;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
+  animation: icone-hover 3s ease-in-out both;
+}
 @media (min-width: 992px) {
   .menu-carte .menu-heart {
     margin-left: 200px;
+  }
+  .menu-carte .menu-heart i.fa-heart:hover {
+    font-weight: 900;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
+    animation: icone-hover 3s ease-in-out both;
   }
 }
 @media (max-width: 922px) {
   .menu-carte .menu-heart {
     margin-left: 200px;
   }
+  .menu-carte .menu-heart i.fa-heart:hover {
+    font-weight: 900;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
+    animation: icone-hover 3s ease-in-out both;
+  }
 }
 @media (max-width: 768px) {
   .menu-carte .menu-heart {
     margin-left: 50px;
+  }
+  .menu-carte .menu-heart i {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .menu-carte .menu-heart i.fa-heart {
+    font-weight: 100;
+    cursor: pointer;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .menu-carte .menu-heart i.fa-heart:active {
+    font-weight: 900;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
+    animation: icone-hover 3s ease-in-out both;
   }
 }
 .menu-carte .menu-section-wrapper {
