@@ -26,19 +26,25 @@ Technologies
 *************
 *****Choix personnel : utilisation du SASS******
 ● Le développement devra se faire en CSS, sans JavaScript.
+
 ● Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
 plus.
+
 ● Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
 Tout le code doit être versionné sur GitHub et le site devra être accessible sur
 Github Pages une fois terminé.
+*************
 Compatibilité
-La cible étant les personnes connectées et pressées, le site sera développé en utilisant
-l’approche mobile-first.
-L’ensemble du site de
-Les pages devront p
-Le site doit être parfa
-Chrome et Firefox
+*************
+*La cible étant les personnes connectées et pressées, le site sera développé en utilisant
+*l’approche mobile-first.
+*L’ensemble du site de
+*Les pages devront p
+*Le site doit être parfa
+*Chrome et Firefox
+************
 Effets graphiques et animations
+************************
 Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser
 les animations ou transitions CSS, pas de JavaScript ni de librairie.
 Boutons
