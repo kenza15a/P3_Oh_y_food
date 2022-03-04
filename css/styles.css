@@ -2,6 +2,7 @@
 /*breakpoints*/
 /*a map*/
 /*header*/
+/*plats**/
 /*media querries*/
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Shrikhand&display=swap");
 * {
@@ -754,7 +755,7 @@ footer a {
   bottom: 0;
   top: 0px;
   height: 100%;
-  width: 35%;
+  width: 25%;
   padding: 30px;
   background-color: #99e2d0;
   color: antiquewhite;
@@ -782,7 +783,8 @@ footer a {
 }
 @media (max-width: 768px) {
   .plat {
-    width: 90%;
+    margin-left: 5px;
+    width: 95%;
   }
   .plat-textes {
     width: 100%;
@@ -795,21 +797,22 @@ footer a {
     justify-content: space-between;
   }
   .plat-description p, .plat-description h4 {
-    max-width: 80%;
+    max-width: 60%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 20px;
+    line-height: 15px;
   }
   .plat-check {
+    padding: 50px 20px 20px 30px;
     position: absolute;
     overflow: hidden;
     right: 0;
     bottom: 0;
     top: 0px;
     height: 100%;
-    min-width: 40%;
-    width: 40%;
+    min-width: 20%;
+    width: 30%;
     background-color: #99e2d0;
     color: #fff;
     font-size: 40px;
@@ -819,12 +822,17 @@ footer a {
     transition: all 200ms ease-in-out;
     transform-origin: right;
   }
+  .plat-check i {
+    transform: translate(200px, 0) rotate(0);
+    transform-origin: center;
+    transition: all 250ms ease-in;
+  }
   .plat:active .plat-check {
     opacity: 1;
     transform: scale(1);
   }
   .plat:active .plat-textes {
-    width: 80%;
+    width: 70%;
   }
 }
 @media (max-width: 922px) {
@@ -904,7 +912,7 @@ footer a {
     top: 0px;
     height: 100%;
     width: 25%;
-    padding: 40px 20px 40px 10px;
+    padding: 50px 20px 20px 30px;
     background-color: #99e2d0;
     color: #fff;
     font-size: 40px;
@@ -1280,7 +1288,7 @@ footer a {
 }
 @media (max-width: 768px) {
   .menu-carte .menu-heart {
-    margin-left: 50px;
+    margin-left: 20px;
   }
   .menu-carte .menu-heart i {
     font-size: 20px;

@@ -123,10 +123,12 @@
                   -webkit-background-clip: text;
                   -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
                   animation: icone-hover 3s ease-in-out both;  
-            }
+                 }
           }
+          
         }
-        @include descktop{
+     
+    @include descktop{
             margin-left: 200px;
             i{
              
@@ -159,7 +161,7 @@
             }
         }
         @include mobile{
-            margin-left: 50px;
+            margin-left: 20px;
             i{
                 font-size:20px;
                 cursor: pointer;

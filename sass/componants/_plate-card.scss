@@ -33,23 +33,7 @@
        
     }
     &-check{
-        position:absolute;
-        overflow: hidden;
-        width:0%;
-        right:0;
-        bottom:0;
-        top:0px;
-        height:100%;
-        width:35%;
-        padding: 30px;
-        background-color:$colour-green-blue;
-        color:antiquewhite;
-        font-size: 40px;
-        border-radius: 0px 15px 15px 0px;
-        opacity: 0;
-        transform :translate(10px,0);
-        transition: all 300ms ease-in;
-        transform-origin: right;
+       @include plat-check;
         & i{
             transform: translate(10px,0) rotate(0);
             transform-origin: center;
@@ -64,25 +48,18 @@
 
             opacity: (1);
             transform: scale(1);
-            
-
         }
         & .plat-textes{
             width:75%;
         }
         & i{
-
             transform: translate(0,0) rotate(360deg);
             
-         
-          
-        }
-        
-        
-
+        }      
     }
     @include mobile{
-        width:90%;
+        margin-left: 5px;
+        width:95%;
         &-textes{
             width:100%;
             
@@ -91,24 +68,25 @@
             @include flex-row;
             justify-content: space-between;
             p,h4{ 
-                max-width: 80%;
+                max-width: 60%;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                line-height: 20px;
+                line-height: 15px;
             }
             
            
         }
         &-check{
+            padding: 50px 20px 20px 30px;
             position:absolute;
             overflow: hidden;
             right:0;
             bottom:0;
             top:0px;
             height:100%;
-            min-width: 40%;
-            width:40%;
+            min-width: 20%;
+            width:30%;
             background-color:$colour-green-blue;
             color:$colour-white;
             font-size: 40px;
@@ -118,19 +96,26 @@
             transition: all 200ms ease-in-out;
             transform-origin: right;
           
-    
+            & i{
+                
+                transform: translate(200px,0) rotate(0);
+                transform-origin: center;
+                transition: all 250ms  ease-in;
+            }
     
         }
         &:active {
             &  .plat-check{
                 opacity: (1);
-                transform: scale(1);
+               transform: scale(1);
                 
     
             }
             & .plat-textes{
-                width:80%;
-            }
+                width:70%;
+           
+            
+        }
             
             
     
@@ -223,7 +208,7 @@
             top:0px;
             height:100%;
             width:25%;
-            padding: 40px 20px 40px 10px;
+            padding: 50px 20px 20px 30px;
             background-color:$colour-green-blue;
             color:$colour-white;
             font-size: 40px;
