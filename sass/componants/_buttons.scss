@@ -46,8 +46,8 @@
 
 
     .button-container{
-        margin-top:$margin-top;
-        margin-bottom: $margin-top;
+        margin-bottom: 20px;
+        margin-top: 20px;
 
     }
 
@@ -58,7 +58,7 @@
      color: white;
      border:none;
      border-radius: 40px;
-     padding:25px;
+     padding:15px;
      width:fit-content;
      @include margin-auto;
      position: relative;
@@ -80,6 +80,15 @@
         opacity: 0;
         z-index: -1;
         transition: all 200ms ease-in-out;
+
+       
+    }
+    @include mobile{
+
+        text-align: center;
+        width:180px;
+        min-width: fit-content;
+      
     }
     /*animation*/
     &:hover {

@@ -2,10 +2,8 @@ footer{
   & i{
     margin-right: 5px;
   }
- @include descktop{/*descktop*/
-    @include flex_row;
-   
-       width:100%;
+  @include flex_row;
+    width:100%;
        background-color: $colour-footer;
        position:sticky;
        top:100%;
@@ -25,9 +23,11 @@ footer{
       justify-content: flex-start;
        
      }
+ @include descktop{/*descktop*/
+ 
    }
 
-   @include tablet{/*tablet*/
+  @include tablet{/*tablet*/
  @include flex_row;
 
     width:100%;

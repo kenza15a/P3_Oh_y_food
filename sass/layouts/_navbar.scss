@@ -25,12 +25,34 @@ nav{
     justify-content: space-evenly;
    & .nav-menu {
     display: block;
-    float:left;
+    position: absolute;
+  left: 20px;
    font-size: 25px;
    color:black;
  }
   }
-  
+  @include tablet{
+    @include flex-row;
+    justify-content: space-evenly;
+   & .nav-menu {
+    display: block;
+    position: absolute;
+  left: 20px;
+   font-size: 25px;
+   color:black;
+ }
+  }
+  @include descktop{
+    @include flex-row;
+    justify-content: space-evenly;
+   & .nav-menu {
+    display: block;
+    position: absolute;
+  left: 20px;
+   font-size: 25px;
+   color:black;
+ }
+  }
   
  
 

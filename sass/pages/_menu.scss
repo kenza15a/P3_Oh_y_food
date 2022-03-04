@@ -73,23 +73,35 @@
     @include  border-radius-up-only;
     width:100%;
     transform: translate(0,-50px);
-    transition: all 1ms linear;
+    transition: all 0ms linear;
+    @include mobile{
+        width:100%;
+        margin-right: 2px;
+        transform: translate(0,-10%);
+        transition: all 0ms linear;
+        margin-bottom: 0px;
+    }
     & .menu-title{
         @include flex_row;
         font-size:20px;
         line-height: 25px;
+        margin-top:20px;
         @include descktop{
             justify-content: center;
         
         }
         @include tablet{
+           
             justify-content: center;
         }
         @include mobile{
-           padding-left:15px ;
+           padding-left:10px ;
+           margin-left: 10px;
+           margin-top: 15px;
             justify-content: flex-start;
+            flex-wrap: nowrap;
             font-size: 15px;
-            line-height: 50px;
+            line-height: 25px;
             
         
         }
@@ -149,7 +161,7 @@
         @include mobile{
             margin-left: 50px;
             i{
-                font-size:25px;
+                font-size:20px;
                 cursor: pointer;
                 &.fa-heart{
                   font-weight: 100;
@@ -201,7 +213,7 @@
             
         }
         @include mobile{
-            margin-left: 25px;
+            margin-left: 0px;
             
         }
     

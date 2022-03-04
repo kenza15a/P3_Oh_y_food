@@ -4,22 +4,30 @@
     padding:$padding-containter;
     @include flex_column-auto;
     text-align: center;
+    
+    
     @include descktop/*descktop*/
     {
        width:100%;
-        padding:$padding-containter;
-        text-align: center;}
+        padding:$padding-containter+10px;
+        text-align: center;
+        margin-bottom: 15px;}
     
     @include tablet {/*tablet*/
-        width:100%;
+        width:98%;
          padding:$padding-containter;
-         @include flex_column-auto;
-         text-align: center;}
+    }
     @include mobile{/*mobile*/
         width:100%;
         padding:$padding-containter;
         @include flex_column-auto;/*flex column*/
         text-align: center;
+        margin-bottom: 15px;
+        h1{
+            text-align: left;
+            font-size: 25px;
+            margin-left: 15px;
+        }
     }
         
 
