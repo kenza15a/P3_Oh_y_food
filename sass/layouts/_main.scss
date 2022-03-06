@@ -5,16 +5,17 @@ main{
     width:100%;
     @include descktop{
         @include flex_column-auto;
-        width:100%;
+       
         }
     @include tablet{
         @include flex_column-auto;
-    width:100%;
+    
     padding-left: 0;
      padding-right: 0;
     }
     @include mobile{
     @include flex_column-auto;
-    width:100%;}
+ 
+   }
    
 }

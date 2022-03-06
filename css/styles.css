@@ -21,10 +21,6 @@ body {
   width: 100vw;
 }
 
-/*@import "./vendors/fontawesome/scss/fontawesome.scss";
-@import "./vendors/fontawesome/scss/brands.scss";
-@import "./vendors/fontawesome/scss/regular.scss";
-@import "./vendors/fontawesome/scss/solid.scss";*/
 /*police de caractere*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -198,7 +194,6 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
   }
 }
 @media (max-width: 922px) {
@@ -206,7 +201,6 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -216,7 +210,6 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
   }
 }
 
