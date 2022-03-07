@@ -55,14 +55,14 @@
     text-decoration: none;
     
     @include gradient-background;
-     color: white;
+     color: $colour-white;
      border:none;
      border-radius: 40px;
      padding:15px;
      width:fit-content;
      @include margin-auto;
      position: relative;
-         z-index: 1;
+     z-index: 1;
      & a{
          text-decoration:none;
          color:$colour-white;

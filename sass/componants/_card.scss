@@ -1,4 +1,4 @@
-.restaurant{
+.restaurant{   /*le composant restaurant*/
     
     position: relative;
 
@@ -124,10 +124,6 @@ i{
     50%{
        opacity:  0.50;
     }
-    70%{
-        opacity:0.70;
-    }
-
     100%{
         opacity: 1;
     }

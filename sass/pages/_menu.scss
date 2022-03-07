@@ -1,17 +1,4 @@
-@keyframes menu-section{ /*animation menu*/
-    0% {
-        opacity:0;
-       
 
-    }
-    50% {
-        opacity:0.5;
-        
-    }
-    100%{
-        opacity:1;
-    }
-}
 @keyframes menu-section-one{ /*animation par section*/
     from {
         opacity:0;
@@ -23,6 +10,7 @@
         transform: translate(0,0); 
     }
 }
+                         
 .menu-slide{  /*image du menu*/
     width:100%;
     height: 40vh;
@@ -72,18 +60,18 @@
     @include margin-auto;
     @include  border-radius-up-only;
     width:100%;
-    transform: translate(0,-50px);
-    transition: all 0ms linear;
+    /*transform: translate(0,-50px);
+    transition: all 0ms linear;*/
     @include mobile{
         width:100%;
         margin-right: 2px;
-        transform: translate(0,-10%);
-        transition: all 0ms linear;
+       /* transform: translate(0,-10%);
+        transition: all 0ms linear;*/
         margin-bottom: 0px;
     }
     & .menu-title{
         @include flex_row;
-        font-size:20px;
+        font-size:25px;
         line-height: 25px;
         margin-top:20px;
         @include descktop{
@@ -98,18 +86,42 @@
            padding-left:10px ;
            margin-left: 10px;
            margin-top: 15px;
-            justify-content: flex-start;
+          justify-content: center;
             flex-wrap: nowrap;
-            font-size: 15px;
-            line-height: 25px;
+            font-size: 20px;
+            line-height: 40px;
             
-        
         }
     }
+
+    /*bouton like j'aime*/
     & .menu-heart{
-        padding-top: 30px; 
-        i{
+        padding-top: 25px; 
+        margin-left: 25px;
+        font-size: 30px;
+        
+       >i{
             font-size:25px;
+            cursor: pointer;
+            &.fa-heart{
+              font-weight: 100;
+              cursor: pointer;
+              background-color: black;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+                &:hover{
+                  font-weight: 900; 
+                  background: linear-gradient($colour-secondary,$colour-primary);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
+                  animation: icone-hover 3s ease-in-out both;  
+                 }
+          }
+        }
+        @include mobile{
+         font-size:25px;
+         margin-left: 25px;
+            >i{
             cursor: pointer;
             &.fa-heart{
               font-weight: 100;
@@ -123,65 +135,13 @@
                   -webkit-background-clip: text;
                   -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
                   animation: icone-hover 3s ease-in-out both;  
-                 }
+            }
+          }
           }
           
         }
      
-    @include descktop{
-            margin-left: 200px;
-            i{
-             
-                &.fa-heart{
-                  
-                    &:hover{
-                      font-weight: 900; 
-                      background: linear-gradient($colour-secondary,$colour-primary);
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
-                      animation: icone-hover 3s ease-in-out both;  
-                }
-              }
-            }
-        }
-        @include tablet{
-            margin-left: 200px;
-            i{
-             
-                &.fa-heart{
-                  
-                    &:hover{
-                      font-weight: 900; 
-                      background: linear-gradient($colour-secondary,$colour-primary);
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
-                      animation: icone-hover 3s ease-in-out both;  
-                }
-              }
-            }
-        }
-        @include mobile{
-            margin-left: 20px;
-            i{
-                font-size:20px;
-                cursor: pointer;
-                &.fa-heart{
-                  font-weight: 100;
-                  cursor: pointer;
-                  background-color: black;
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                    &:active{
-                      font-weight: 900; 
-                      background: linear-gradient($colour-secondary,$colour-primary);
-                      -webkit-background-clip: text;
-                      -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
-                      animation: icone-hover 3s ease-in-out both;  
-                }
-              }
-            }
-        }
-      
+  
      }
      & .menu-section-wrapper{
          width:100%;
@@ -237,8 +197,7 @@
         border-top: 3px solid $colour-green-blue;
         width:7%;
     }
-   // animation: menu-section 2s  ease-in-out;
-    
+   
      
   
     @include descktop{

@@ -9,36 +9,22 @@ header{
     display:flex;
     flex-direction: column;
     -ms-flex-align: center;
-    width:100%;
-   
-   
+    width:100vw;
     &-location{
       background-color: $colour-location;
-      
-    
   }
 }
  @include descktop{
-    margin-top:$margin-top;
+  margin-top:$margin-top;
   padding-bottom:15px;
   text-align:center;
   background-color:$colour-header;
   width:100vw;
-  height: 50vh;
-  .presentation{
-    display:flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    width:100%;
-   
-   
-    &-location{
-      background-color: $colour-location;
-      
-    
-  }
+  height: 38vh;
+  padding-bottom: 20px;
+ }
 
-  }
+
   @include tablet{
     margin-top:$margin-top;
   padding-bottom:15px;
@@ -46,50 +32,32 @@ header{
   background-color:$colour-header;
   width:100vw;
   height: 50vh;
-  .presentation{
-    display:flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    width:100%;
-   
-   
-    &-location{
-      background-color: $colour-location;
-      
-    
-  }
-
-  }
+  
  }
  
- }
+ 
  @include mobile{
   margin-top:$margin-top;
 padding-bottom:15px;
 text-align:center;
 background-color:$colour-header;
 width:100vw;
-height: 60vh;
+height: 50vh;
 .presentation{
   display:flex;
   flex-direction: column;
   -ms-flex-align: center;
-  width:100%;
+  width:100vw;
+  &-shoutout{
+    width:95%;
+  }
  
  
   &-location{
-    background-color: $colour-location;
-    
-  
-}
-
+    background-color: $colour-location; 
 }
 }
-
-
-
-
-
+}
 }
 
 
