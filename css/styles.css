@@ -94,6 +94,45 @@ header .presentation-location {
   }
 }
 
+.menu-header {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #f6f6f6;
+  width: 100vw;
+}
+@media (max-width: 768px) {
+  .menu-header {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 50vh;
+  }
+}
+@media (max-width: 922px) {
+  .menu-header {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 40vh;
+  }
+}
+@media (min-width: 992px) {
+  .menu-header {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 30vh;
+    padding-bottom: 20px;
+  }
+}
+
 nav {
   display: flex;
   flex-direction: row;

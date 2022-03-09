@@ -61,6 +61,39 @@ height: 50vh;
 }
 
 
+.menu-header{
+  margin-top:$margin-top;
+  padding-bottom:15px;
+  text-align:center;
+  background-color:$colour-header;
+  width:100vw;
+   @include mobile{
+    margin-top:$margin-top;
+  padding-bottom:15px;
+  text-align:center;
+  background-color:$colour-header;
+  width:100vw;
+  height: 50vh;
   
+  }
+  @include tablet{
+    margin-top:$margin-top;
+  padding-bottom:15px;
+  text-align:center;
+  background-color:$colour-header;
+  width:100vw;
+  height: 40vh;
+  
+ }
  
-  
+ @include descktop{
+  margin-top:$margin-top;
+  padding-bottom:15px;
+  text-align:center;
+  background-color:$colour-header;
+  width:100vw;
+  height:30vh;
+  padding-bottom: 20px;
+ }
+
+}
