@@ -68,7 +68,7 @@ header .presentation-location {
     text-align: center;
     background-color: #f6f6f6;
     width: 100vw;
-    height: 60vh;
+    height: 40vh;
   }
 }
 @media (max-width: 768px) {
