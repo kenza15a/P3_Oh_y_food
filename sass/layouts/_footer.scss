@@ -1,38 +1,38 @@
-footer{
-  & i{
+footer {
+  & i {
     margin-right: 5px;
   }
   @include flex_row;
-    width:100%;
-       background-color: $colour-footer;
-       position:sticky;
-       top:100%;
-       margin-bottom: 0px;
-       bottom: 0px;
-       width: 100%;
-       padding-top: 35px;
-       padding-bottom: 35px;
-       @include padding-auto;
-       
-     & a {
-       color: $colour-white;
-       text-decoration: none;
-       font-size: 15px;
-      display:flex;
-      flex-direction: row;
-      justify-content: flex-start;
-       
-     }
- @include descktop{/*descktop*/
- 
-   }
+  width: 100%;
+  background-color: $colour-footer;
+  position: sticky;
+  top: 100%;
+  margin-bottom: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  @include padding-auto;
 
-  @include tablet{/*tablet*/
- @include flex_row;
+  & a {
+    color: $colour-white;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  @include descktop {
+    /*descktop*/
+  }
 
-    width:100%;
+  @include tablet {
+    /*tablet*/
+    @include flex_row;
+
+    width: 100%;
     background-color: $colour-footer;
-    top:100%;
+    top: 100%;
     margin-bottom: 0px;
     bottom: 0px;
     width: 100%;
@@ -40,54 +40,51 @@ footer{
     @include padding-auto;
     padding-top: 35px;
     padding-bottom: 35px;
-    
-  & a {
-    color: $colour-white;
-    text-decoration: none;
-    font-size: 15px;
-   display:flex;
-   flex-direction: row;
-   justify-content: flex-start;
-    
+
+    & a {
+      color: $colour-white;
+      text-decoration: none;
+      font-size: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
   }
-}
-  @include mobile{/*mobile*/
- @include flex_column-auto;
-    width:100%;
+  @include mobile {
+    /*mobile*/
+    @include flex_column-auto;
+    width: 100%;
     background-color: $colour-footer;
-    position:sticky;
-    top:100%;
+    position: sticky;
+    top: 100%;
     margin-bottom: 0px;
     bottom: 0px;
     width: 100%;
     padding-top: 35px;
     padding-left: 45px;
-    
-  & a {
-    color: $colour-white;
-    text-decoration: none;
-    font-size: 15px;
-   @include flex_row;
-   justify-content: flex-start;
-   margin-bottom: 20px;
-  
-    
+
+    & a {
+      color: $colour-white;
+      text-decoration: none;
+      font-size: 15px;
+      @include flex_row;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
   }
 }
-}
-.logo-footer{
-& img{
-  height:30px;
-  width:150px;
-  filter: invert(100%);
--webkit-filter: invert(100%);
--moz-filter: invert(100%);
-@media (max-width:768px){/*mobile*/
-  height:20px;
-  width:100px;
-
-}
-}
-margin-bottom: 15px;
-
+.logo-footer {
+  & img {
+    height: 30px;
+    width: 150px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    @media (max-width: 768px) {
+      /*mobile*/
+      height: 20px;
+      width: 100px;
+    }
+  }
+  margin-bottom: 15px;
 }

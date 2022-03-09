@@ -1,229 +1,208 @@
-
-@keyframes menu-section-one{ /*animation par section*/
+@keyframes menu-section-one {
+    /*animation par section*/
     from {
-        opacity:0;
-        transform: translate(0,20%); 
-
+        opacity: 0;
+        transform: translate(0, 20%);
     }
     to {
-        opacity:1;
-        transform: translate(0,0); 
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
-                         
-.menu-slide{  /*image du menu*/
-    width:100%;
+
+.menu-slide {
+    /*image du menu*/
+    width: 100%;
     height: 40vh;
-    img{
+    img {
         height: 250px;
-        width:100%;
-        object-fit:cover;
-
+        width: 100%;
+        object-fit: cover;
     }
-    @include descktop{
-        img{
+   
+    @include mobile {
+        height: 40vh;
+        width: 100vw;
+        img {
+            object-fit: cover;
+            height: inherit;
+            width: 100%;
+        }
+    }
+    
+    @include tablet {
+        height: 40vh;
+        width: 100vw;
+        img {
+            object-fit: cover;
+            height: inherit;
+            width: 100%;
+        }
+    }
+    @include descktop {
+        img {
             height: 250px;
-            width:100%;
-            object-fit:cover;
-            position: fixed; 
-            left:0;
-    
-        }
-    }
-   @include tablet{
-         height:40vh;
-         width:100vw;
-        img{
-            object-fit:cover ;
-            height:inherit;
-            width:100%
-            
-    
-        }
-    }
-
-    @include mobile{
-        height:40vh;
-        width:100vw;
-        img{
-            object-fit:cover;
-           height:inherit;
-            width:100%
-    
+            width: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
         }
     }
     
-
 }
-.menu-carte{ /*la section qui rergoupe les sous sections menu*/
+.menu-carte {
+    /*la section qui rergoupe les sous sections menu*/
     background-color: $colour-header;
     @include margin-auto;
-    @include  border-radius-up-only;
-    width:100%;
+    @include border-radius-up-only;
+    width: 100%;
     /*transform: translate(0,-50px);
     transition: all 0ms linear;*/
-    @include mobile{
-        width:100%;
+    @include mobile {
+        width: 100%;
         margin-right: 2px;
-       /* transform: translate(0,-10%);
+        /* transform: translate(0,-10%);
         transition: all 0ms linear;*/
         margin-bottom: 0px;
     }
-    & .menu-title{
+    & .menu-title {
         @include flex_row;
-        font-size:25px;
+        font-size: 25px;
         line-height: 25px;
-        margin-top:20px;
-        @include descktop{
-            justify-content: center;
-        
-        }
-        @include tablet{
-           
+        margin-top: 20px;
+        @include descktop {
             justify-content: center;
         }
-        @include mobile{
-           padding-left:10px ;
-           margin-left: 10px;
-           margin-top: 15px;
-          justify-content: center;
+        @include tablet {
+            justify-content: center;
+        }
+        @include mobile {
+            padding-left: 10px;
+            margin-left: 10px;
+            margin-top: 15px;
+            justify-content: center;
             flex-wrap: nowrap;
             font-size: 20px;
             line-height: 40px;
-            
         }
     }
 
     /*bouton like j'aime*/
-    & .menu-heart{
-        padding-top: 25px; 
+    & .menu-heart {
+        padding-top: 25px;
         margin-left: 25px;
         font-size: 30px;
-        
-       >i{
-            font-size:25px;
+
+        > i {
+            font-size: 25px;
             cursor: pointer;
-            &.fa-heart{
-              font-weight: 100;
-              cursor: pointer;
-              background-color: black;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-                &:hover{
-                  font-weight: 900; 
-                  background: linear-gradient($colour-secondary,$colour-primary);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
-                  animation: icone-hover 3s ease-in-out both;  
-                 }
-          }
-        }
-        @include mobile{
-         font-size:25px;
-         margin-left: 25px;
-            >i{
-            cursor: pointer;
-            &.fa-heart{
-              font-weight: 100;
-              cursor: pointer;
-              background-color: black;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-                &:active{
-                  font-weight: 900; 
-                  background: linear-gradient($colour-secondary,$colour-primary);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
-                  animation: icone-hover 3s ease-in-out both;  
+            &.fa-heart {
+                font-weight: 100;
+                cursor: pointer;
+                background-color: black;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                &:hover {
+                    font-weight: 900;
+                    background: linear-gradient($colour-secondary, $colour-primary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: linear-gradient($colour-secondary, $colour-primary);
+                    animation: icone-hover 3s ease-in-out both;
+                }
             }
-          }
-          }
-          
         }
-     
-  
-     }
-     & .menu-section-wrapper{
-         width:100%;
-         @include descktop{
-             width:100%;
-             @include flex-row;
-             justify-content: space-between;
-         }
-     }
-    & .menu-section{ /*entrées plats ou dessert*/
+        @include mobile {
+            font-size: 25px;
+            margin-left: 25px;
+            > i {
+                cursor: pointer;
+                &.fa-heart {
+                    font-weight: 100;
+                    cursor: pointer;
+                    background-color: black;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    &:active {
+                        font-weight: 900;
+                        background: linear-gradient($colour-secondary, $colour-primary);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: linear-gradient($colour-secondary, $colour-primary);
+                        animation: icone-hover 3s ease-in-out both;
+                    }
+                }
+            }
+        }
+    }
+    & .menu-section-wrapper {
+        width: 100%;
+        @include descktop {
+            width: 100%;
+            @include flex-row;
+            justify-content: space-between;
+        }
+    }
+    & .menu-section {
+        /*entrées plats ou dessert*/
         padding: 15px;
         line-height: 10px;
         height: fit-content;
         margin-left: 25px;
-        
-        h2{
+
+        h2 {
             color: $colour-footer;
-        font-style: normal;
+            font-style: normal;
         }
-        hr{
+        hr {
             border-top: 3px solid $colour-green-blue;
-            width:7%;
+            width: 7%;
         }
-        @include descktop{
-            margin-left: 15px;
-            width:30%;
-            
-        }
-        @include tablet{
-            margin-left: 15px;
-            
-        }
-        @include mobile{
+        @include mobile {
             margin-left: 0px;
-            
         }
-    
+        @include tablet {
+            margin-left: 15px;
+        }
+        @include descktop {
+            margin-left: 15px;
+            width: 30%;
+        }
+       
     }
-  
 }
 
-.menu-section{ /*entrées plats ou dessert*/
+.menu-section {
+    /*entrées plats ou dessert*/
     padding: 15px;
     line-height: 10px;
     height: fit-content;
     margin-left: 25px;
-    
-    h2{
+
+    h2 {
         color: $colour-footer;
-    font-style: normal;
+        font-style: normal;
     }
-    hr{
+    hr {
         border-top: 3px solid $colour-green-blue;
-        width:7%;
+        width: 7%;
+    }
+    @include mobile {
+        margin-left: 25px;
+    }
+    @include tablet {
+        margin-left: 15px;
+    }
+    
+    @include descktop {
+        margin-left: 15px;
     }
    
-     
-  
-    @include descktop{
-        margin-left: 15px;
-        
-        
-    }
-    @include tablet{
-        margin-left: 15px;
-        
-    }
-    @include mobile{
-        margin-left: 25px;
-      
-        
-    }
-
 }
-#entrees{
+#entrees {
     animation: menu-section-one 600ms ease-in-out;
 }
- #plats{
-     
-    animation: menu-section-one 1s   ease-in-out;
+#plats {
+    animation: menu-section-one 1s ease-in-out;
 }
- #desserts{
-    
-    animation: menu-section-one 1.5s  ease-in-out;
+#desserts {
+    animation: menu-section-one 1.5s ease-in-out;
 }

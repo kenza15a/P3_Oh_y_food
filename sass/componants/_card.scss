@@ -1,131 +1,124 @@
-.restaurant{   /*le composant restaurant*/
-    
+.restaurant {
+    /*le composant restaurant*/
+
     position: relative;
 
-    a{
+    a {
         @include padding-card-description;
-        p{
-          @include flex_row;  
-          justify-content: space-between;
-      
+        p {
+            @include flex_row;
+            justify-content: space-between;
+        }
     }
-}
-   
+
     @include flex_column-auto;
-        border-radius: $border-radius;
-         @include margin-auto;
-         @include elements-shadow;
-         margin-bottom: 15px;
-         width:98%;
-         min-width: fit-content;
-        
-        & img{
-            object-fit:cover ;
-            border-radius: 15px 15px 0px 0px;
-            height: 200px;
-            width:100%
-        }
-    @include descktop{ //descktop breakpoint
-        @include flex_column-auto;
-        border-radius: $border-radius;
-         @include margin-auto;
-         @include elements-shadow;
-         margin-bottom: 15px;
-         width:40%;
-         min-width: fit-content;
-        
-        & img{
-            object-fit:cover ;
-            border-radius: 15px 15px 0px 0px;
-            height: 200px;
-            width:100%
-        }
+    border-radius: $border-radius;
+    @include margin-auto;
+    @include elements-shadow;
+    margin-bottom: 15px;
+    width: 98%;
+    min-width: fit-content;
+
+    & img {
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+        height: 200px;
+        width: 100%;
     }
-
-
-    @include tablet{ //tablet breakpoint
+    @include descktop {
+        //descktop breakpoint
         @include flex_column-auto;
         border-radius: $border-radius;
         @include margin-auto;
         @include elements-shadow;
         margin-bottom: 15px;
-        width:100%;
+        width: 40%;
         min-width: fit-content;
-       & img{
-           object-fit:cover ;
-           border-radius: 15px 15px 0px 0px;
-           height: 200px;
-           width:100%;
-       }
+
+        & img {
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+            height: 200px;
+            width: 100%;
+        }
+    }
+
+    @include tablet {
+        //tablet breakpoint
+        @include flex_column-auto;
+        border-radius: $border-radius;
+        @include margin-auto;
+        @include elements-shadow;
+        margin-bottom: 15px;
+        width: 100%;
+        min-width: fit-content;
+        & img {
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+            height: 200px;
+            width: 100%;
+        }
+    }
+
+    @include mobile {
+        //mobile breakpoint
+        @include flex_column-auto;
+        border-radius: $border-radius;
+        @include margin-auto;
+        @include elements-shadow;
+        margin-bottom: 15px;
+        width: 100%;
+        min-width: fit-content;
+        & img {
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+            height: 200px;
+            width: 100%;
+        }
+    }
 }
-    
-    @include mobile{ //mobile breakpoint
-    @include flex_column-auto;
-     border-radius: $border-radius;
-     @include margin-auto;
-     @include elements-shadow;
-     margin-bottom: 15px;
-     width:100%;
-     min-width: fit-content;
-    & img{
-        object-fit:cover ;
-        border-radius: 15px 15px 0px 0px;
-        height: 200px;
-        width:100%;
-    }
-    }
-    
-     
-  }
-  
-  .icone-like{
-      
-      position: absolute;
-      bottom:0;
-      right:0;
-      transform: translate(-40%,-40%);
-      font-size: 25px;
-i{
-      &.fa-heart{
-        font-weight: 100;
-        cursor: pointer;
-        background-color: black;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;}
-          &:active{
-            font-weight: 900; 
-            background: linear-gradient($colour-secondary,$colour-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
-            animation: icone-hover 3s ease-in both; 
-             
-      }
-      @include descktop{
-        &:hover{
-            font-weight: 900; 
-            background: linear-gradient($colour-secondary,$colour-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color:linear-gradient($colour-secondary,$colour-primary);
-            animation: icone-hover 3s ease-in both; 
-             
-      }
 
-      }
-
-      
-  }
- 
+.icone-like {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-40%, -40%);
+    font-size: 25px;
+    i {
+        &.fa-heart {
+            font-weight: 100;
+            cursor: pointer;
+            background-color: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:active {
+            font-weight: 900;
+            background: linear-gradient($colour-secondary, $colour-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: linear-gradient($colour-secondary, $colour-primary);
+            animation: icone-hover 3s ease-in both;
+        }
+        @include descktop {
+            &:hover {
+                font-weight: 900;
+                background: linear-gradient($colour-secondary, $colour-primary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: linear-gradient($colour-secondary, $colour-primary);
+                animation: icone-hover 3s ease-in both;
+            }
+        }
+    }
 }
 @keyframes icone-hover {
-    0%{
+    0% {
         opacity: 0;
     }
-    
-    50%{
-       opacity:  0.50;
+
+    50% {
+        opacity: 0.5;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
-    

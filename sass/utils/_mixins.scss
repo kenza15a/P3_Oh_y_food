@@ -1,94 +1,90 @@
-@mixin nav-shadow ($color){/*shadow navbar*/
-box-shadow: 1px 180px 17px -4px $color;
-     
+@mixin nav-shadow($color) {
+    /*shadow navbar*/
+    box-shadow: 1px 180px 17px -4px $color;
 }
-@mixin border-radius-up-only{
+@mixin border-radius-up-only {
     border-radius: 20px 20px 0px 0px;
 }
-@mixin margin-auto{
-    margin-left:auto;
-    margin-right:auto;
+@mixin margin-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
-@mixin margin-small{
- margin-left:15px;
- margin-right:15px;
+@mixin margin-small {
+    margin-left: 15px;
+    margin-right: 15px;
 }
-@mixin flex_column{
-    display:flex;
+@mixin flex_column {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-align-items: center;
+    align-items: center;
 }
-@mixin flex_column-auto{
-    display:flex;
+@mixin flex_column-auto {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
-@mixin flex_row{
-    display:flex;
+@mixin flex_row {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-@mixin padding-auto{
-    padding-left:auto;
+@mixin padding-auto {
+    padding-left: auto;
     padding-right: auto;
 }
-@mixin elements-shadow{
-    -webkit-box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.4); 
-    box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.4);
+@mixin elements-shadow {
+    -webkit-box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.4);
 }
-@mixin padding-card-description{
+@mixin padding-card-description {
     padding-left: 20px;
-        padding-right: 20px;
+    padding-right: 20px;
 }
-@mixin gradient-background{
-    background: linear-gradient($colour-secondary,$colour-primary);
+@mixin gradient-background {
+    background: linear-gradient($colour-secondary, $colour-primary);
 }
 /*header*/
 /*plats**/
-@mixin plat-check{
-    position:absolute;
+@mixin plat-check {
+    position: absolute;
     overflow: hidden;
-    width:0%;
-    right:0;
-    bottom:0;
-    top:0px;
-    height:100%;
-    width:25%;
+    width: 0%;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    height: 100%;
+    width: 25%;
     padding: 30px;
-    background-color:$colour-green-blue;
-    color:antiquewhite;
+    background-color: $colour-green-blue;
+    color: antiquewhite;
     font-size: 40px;
     border-radius: 0px 15px 15px 0px;
     opacity: 0;
-    transform :translate(10px,0);
+    transform: translate(10px, 0);
     transition: all 300ms ease-in;
     transform-origin: right;
 }
-   
-
 
 /*media querries*/
-$breakpoints:(
-"descktop":992px,
-"tablet":922px,
-"mobile":768px,
-
+$breakpoints: (
+    "descktop": 992px,
+    "tablet": 922px,
+    "mobile": 768px,
 );
-@mixin descktop{
-    @media (min-width: map-get($breakpoints,"descktop")){
+@mixin descktop {
+    @media (min-width: map-get($breakpoints,"descktop")) {
         @content;
     }
 }
-@mixin tablet{
-    @media (max-width: map-get($breakpoints,"tablet")){
+@mixin tablet {
+    @media (max-width: map-get($breakpoints,"tablet")) {
         @content;
     }
 }
-@mixin mobile{
-    @media (max-width: map-get($breakpoints,"mobile")){
+@mixin mobile {
+    @media (max-width: map-get($breakpoints,"mobile")) {
         @content;
     }
 }

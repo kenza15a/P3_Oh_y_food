@@ -1,95 +1,94 @@
-.number{ /*le tag numero de fonctionnement*/
-    color:white;
+.number {
+    /*le tag numero de fonctionnement*/
+    color: white;
     background-color: $colour-primary;
     border-radius: 50%;
     padding: 10px 12px;
     font-size: 10px;
     position: absolute;
-    top:0;
-    left:0;
-    transform: translate(-30%,80%);
-    @include descktop{
-    color:white;
-    background-color: $colour-primary;
-    border-radius: 50%;
-    padding: 10px 12px;
-    font-size: 10px;
-    position: absolute;
-    top:0;
-    left:0;
-    transform: translate(-75%,60%);
+    top: 0;
+    left: 0;
+    transform: translate(-30%, 80%);
+    @include descktop {
+        color: white;
+        background-color: $colour-primary;
+        border-radius: 50%;
+        padding: 10px 12px;
+        font-size: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-75%, 60%);
     }
     @include tablet {
-        left:-15px;
-        font-size:10px;
+        left: -15px;
+        font-size: 10px;
     }
-   @include mobile{
-    color:white;
-    background-color: $colour-primary;
-    border-radius: 50%;
-    padding: 10px 12px;
-    font-size: 10px;
-    position: absolute;
-    top:0;
-    left:-10px;
-    transform: translate(-30%,80%);
-   }
-    
+    @include mobile {
+        color: white;
+        background-color: $colour-primary;
+        border-radius: 50%;
+        padding: 10px 12px;
+        font-size: 10px;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        transform: translate(-30%, 80%);
+    }
 }
-.fonction{
+.fonction {
     position: relative;
-    margin-bottom:$margin-bottom;
-    padding:$padding-containter+5px;
+    margin-bottom: $margin-bottom;
+    padding: $padding-containter + 5px;
     background-color: $colour-location;
-    width:30%;
+    width: 30%;
     margin-left: 15px;
-    min-width:fit-content;
-    border-radius:$border-radius;
+    min-width: fit-content;
+    border-radius: $border-radius;
     @include elements-shadow;
     margin-right: 15px;
-    @include descktop{
-        width:25%;
-        padding:7px;
+    @include descktop {
+        width: 25%;
+        padding: 7px;
         margin-left: 15px;
-        min-width:fit-content;
+        min-width: fit-content;
     }
-    @include tablet{
-        width:28%;
+    @include tablet {
+        width: 25%;
         margin-left: 18px;
-        min-width:fit-content;
+        min-width: fit-content;
     }
-    @include tablet{
-        width:90%;
+    @include mobile {
+        width: 90%;
         margin-left: 18px;
-        min-width:fit-content;
+        min-width: fit-content;
     }
-   
-    &-text{
+
+    &-text {
         font-size: 18px;
         font-weight: bold;
         @include flex_row;
         justify-content: center;
-    i{
-    margin-right: 15px;
-}
-
-    }
-    & .material-icons{
-        color:gray;
-        &:hover{
-            color:$colour-primary;
+        i {
+            margin-right: 15px;
         }
     }
-    &.fa-regular{
-        color:gray;
-        &:hover{
-            color:$colour-primary;
+    & .material-icons {
+        color: gray;
+        &:hover {
+            color: $colour-primary;
         }
-      }
-     & .fa-solid{
-        color:gray;
-        &:hover{
-            color:$colour-primary;
+    }
+    &.fa-regular {
+        color: gray;
+        &:hover {
+            color: $colour-primary;
         }
-      }
+    }
+    & .fa-solid {
+        color: gray;
+        &:hover {
+            color: $colour-primary;
+        }
+    }
 }

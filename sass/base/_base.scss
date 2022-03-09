@@ -1,18 +1,14 @@
-*{
-  box-sizing: border-box;/*boxsizing*/
+* {
+  box-sizing: border-box; /*boxsizing*/
   margin-left: 0;
   margin-right: 0;
-  list-style:none;
+  list-style: none;
   text-decoration: none;
-  font-style:normal;
+  font-style: normal;
 }
 
-body{
-  
-    margin:0;
-    height: 100vh;
-    width:100vw;
-    
-  }
-
- 
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}

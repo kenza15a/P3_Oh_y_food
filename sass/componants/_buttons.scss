@@ -1,74 +1,24 @@
-.button-shoutout{ /*bouton page d'accueil*/
+.button-shoutout {
+    /*bouton page d'accueil*/
 
-       
-        text-decoration: none;
-       @include gradient-background;
-        color: white;
-        border:none;
-        border-radius: 40px;
-        padding:15px;
-        width:fit-content;
-        margin-top:$margin-top;
-        position: relative;
-         z-index: 1;
-       
-    
-        @include margin-auto;
-        & a{
-            text-decoration:none;
-            color:$colour-white;
-            font-size:20px;
-           
-        }
-        &::after{
-            border-radius: 40px;
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(lighten($colour-secondary, 5) , lighten($colour-primary, 5));
-            opacity: 0;
-            z-index: -1;
-            transition: all  250ms ease-in-out;
-        }
-        /*animation*/
-        &:hover {
-            &::after {
-                opacity: 1;
-             
-                box-shadow:5px 2px 16px 3px rgba(0,0,0,0.41);                
-        }
-      
-      }
-    }
-
-
-    .button-container{
-        margin-bottom: 20px;
-        margin-top: 20px;
-
-    }
-
-.button_commander{ /*bouton de commande*/
     text-decoration: none;
-    
     @include gradient-background;
-     color: $colour-white;
-     border:none;
-     border-radius: 40px;
-     padding:15px;
-     width:fit-content;
-     @include margin-auto;
-     position: relative;
-     z-index: 1;
-     & a{
-         text-decoration:none;
-         color:$colour-white;
-         font-size:20px;
-     }
-     &::after{
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+    width: fit-content;
+    margin-top: $margin-top;
+    position: relative;
+    z-index: 1;
+
+    @include margin-auto;
+    & a {
+        text-decoration: none;
+        color: $colour-white;
+        font-size: 20px;
+    }
+    &::after {
         border-radius: 40px;
         content: "";
         position: absolute;
@@ -76,29 +26,68 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(lighten($colour-secondary, 5) , lighten($colour-primary, 5));
+        background: linear-gradient(lighten($colour-secondary, 5), lighten($colour-primary, 5));
         opacity: 0;
         z-index: -1;
-        transition: all 200ms ease-in-out;
-
-       
-    }
-    @include mobile{
-
-        text-align: center;
-        width:180px;
-        min-width: fit-content;
-      
+        transition: all 250ms ease-in-out;
     }
     /*animation*/
     &:hover {
         &::after {
             opacity: 1;
-             
-             box-shadow:5px 2px 16px 3px rgba(0,0,0,0.41);
 
-            
+            box-shadow: 5px 2px 16px 3px rgba(0, 0, 0, 0.41);
+        }
     }
-   
-   }
+}
+
+.button-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button_commander {
+    /*bouton de commande*/
+    text-decoration: none;
+
+    @include gradient-background;
+    color: $colour-white;
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+    width: fit-content;
+    @include margin-auto;
+    position: relative;
+    z-index: 1;
+    & a {
+        text-decoration: none;
+        color: $colour-white;
+        font-size: 20px;
+    }
+    &::after {
+        border-radius: 40px;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(lighten($colour-secondary, 5), lighten($colour-primary, 5));
+        opacity: 0;
+        z-index: -1;
+        transition: all 200ms ease-in-out;
+    }
+    @include mobile {
+        text-align: center;
+        width: 180px;
+        min-width: fit-content;
+    }
+    /*animation*/
+    &:hover {
+        &::after {
+            opacity: 1;
+
+            box-shadow: 5px 2px 16px 3px rgba(0, 0, 0, 0.41);
+        }
+    }
 }

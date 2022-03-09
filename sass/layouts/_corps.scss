@@ -1,21 +1,18 @@
-
-main{
+main {
     position: relative;
     @include flex_column-auto;
-    width:100%;
-    @include descktop{
+    width: 100%;
+    @include mobile {
         @include flex_column-auto;
-       
-        }
-    @include tablet{
-        @include flex_column-auto;
-    
-    padding-left: 0;
-     padding-right: 0;
     }
-    @include mobile{
-    @include flex_column-auto;
- 
-   }
-   
+    @include tablet {
+        @include flex_column-auto;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include descktop {
+        @include flex_column-auto;
+    }
+    
 }

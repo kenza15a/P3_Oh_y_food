@@ -42,7 +42,7 @@ header {
     text-align: center;
     background-color: $colour-header;
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
   }
 
   
@@ -63,6 +63,7 @@ header {
   text-align: center;
   background-color: $colour-header;
   width: 100vw;
+  height: 40vh;
   @include mobile {
     margin-top: $margin-top;
     padding-bottom: 15px;

@@ -1,55 +1,53 @@
-.restaurant-wrapper{
+.restaurant-wrapper {
     @include flex_column;
-   //position: relative;
+    //position: relative;
     padding: 0 15px 15px 0;
- 
-    @include descktop{/*descktop*/
-       
-        width:100%;
-       
-       }
-    @include tablet{/*tablet*/
-   
-     width:100%;
-     padding-left: 20px;
-     
-    }
-    @include mobile{
-        align-items:baseline;
-         width: 100%;
-         margin-left: auto;
-         margin-right: auto;
-         &-title{
+    @include mobile {
+        align-items: baseline;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        &-title {
             text-align: left;
-        font-size: 30px;
-        margin-left: 15px;
+            font-size: 30px;
+            margin-left: 15px;
         }
-    }  
+    }
+    @include tablet {
+        /*tablet*/
+
+        width: 100%;
+        padding-left: 20px;
+    }
+    @include descktop {
+        /*descktop*/
+
+        width: 100%;
+    }
 }
 
-     .restaurant-group{ /*conteneur de deux rest*/
-        @include flex_row;
-        width:100%;
-        margin-left:15px;
-        
-        & a{
-            color:black;
-        }
-        @include descktop{/*tablet*/
-            width:90%;
-            margin-left:15px;
-           }
-        @include tablet{/*tablet*/
-            @include flex_column-auto;
-            width:95%;
-        }
-        @include mobile{
-            @include flex_column;
-            margin-left: 0;
-             width:98%;
-        }
-     }
+.restaurant-group {
+    /*conteneur de deux rest*/
+    @include flex_row;
+    width: 100%;
+    margin-left: 15px;
 
-    
-
-
+    & a {
+        color: black;
+    }
+    @include descktop {
+        /*tablet*/
+        width: 90%;
+        margin-left: 15px;
+    }
+    @include tablet {
+        /*tablet*/
+        @include flex_column-auto;
+        width: 95%;
+    }
+    @include mobile {
+        @include flex_column;
+        margin-left: 0;
+        width: 98%;
+    }
+}
