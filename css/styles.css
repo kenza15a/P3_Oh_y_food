@@ -40,6 +40,7 @@ header {
   text-align: center;
   background-color: #f6f6f6;
   width: 100vw;
+  height: 65vh;
 }
 header .presentation {
   display: flex;
@@ -49,27 +50,6 @@ header .presentation {
 }
 header .presentation-location {
   background-color: #eaeaea;
-}
-@media (min-width: 992px) {
-  header {
-    margin-top: 25px;
-    padding-bottom: 15px;
-    text-align: center;
-    background-color: #f6f6f6;
-    width: 100vw;
-    height: 45vh;
-    padding-bottom: 20px;
-  }
-}
-@media (max-width: 922px) {
-  header {
-    margin-top: 25px;
-    padding-bottom: 15px;
-    text-align: center;
-    background-color: #f6f6f6;
-    width: 100vw;
-    height: 40vh;
-  }
 }
 @media (max-width: 768px) {
   header {
@@ -91,6 +71,27 @@ header .presentation-location {
   }
   header .presentation-location {
     background-color: #eaeaea;
+  }
+}
+@media (max-width: 922px) {
+  header {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 40vh;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 45vh;
+    padding-bottom: 20px;
   }
 }
 

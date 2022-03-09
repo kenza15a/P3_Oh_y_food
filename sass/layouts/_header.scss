@@ -1,99 +1,92 @@
-
-header{
-  margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-  .presentation{
-    display:flex;
+header {
+  margin-top: $margin-top;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: $colour-header;
+  width: 100vw;
+  height:65vh;
+  .presentation {
+    display: flex;
     flex-direction: column;
     -ms-flex-align: center;
-    width:100vw;
-    &-location{
+    width: 100vw;
+    &-location {
       background-color: $colour-location;
+    }
+  }
+  @include mobile {
+    margin-top: $margin-top;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: $colour-header;
+    width: 100vw;
+    height: 50vh;
+    .presentation {
+      display: flex;
+      flex-direction: column;
+      -ms-flex-align: center;
+      width: 100vw;
+      &-shoutout {
+        width: 95%;
+      }
+
+      &-location {
+        background-color: $colour-location;
+      }
+    }
+  }
+
+  @include tablet {
+    margin-top: $margin-top;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: $colour-header;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  
+  @include descktop {
+    margin-top: $margin-top;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: $colour-header;
+    width: 100vw;
+    height: 45vh;
+    padding-bottom: 20px;
   }
 }
- @include descktop{
-  margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-  height:45vh;
-  padding-bottom: 20px;
- }
 
-
-  @include tablet{
-    margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-  height: 40vh;
-  
- }
- 
- 
- @include mobile{
-  margin-top:$margin-top;
-padding-bottom:15px;
-text-align:center;
-background-color:$colour-header;
-width:100vw;
-height: 50vh;
-.presentation{
-  display:flex;
-  flex-direction: column;
-  -ms-flex-align: center;
-  width:100vw;
-  &-shoutout{
-    width:95%;
+.menu-header {
+  margin-top: $margin-top;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: $colour-header;
+  width: 100vw;
+  @include mobile {
+    margin-top: $margin-top;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: $colour-header;
+    width: 100vw;
+    height: 50vh;
   }
- 
- 
-  &-location{
-    background-color: $colour-location; 
-}
-}
-}
-}
-
-
-.menu-header{
-  margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-   @include mobile{
-    margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-  height: 50vh;
-  
+  @include tablet {
+    margin-top: $margin-top;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: $colour-header;
+    width: 100vw;
+    height: 40vh;
   }
-  @include tablet{
-    margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-  height: 40vh;
-  
- }
- 
- @include descktop{
-  margin-top:$margin-top;
-  padding-bottom:15px;
-  text-align:center;
-  background-color:$colour-header;
-  width:100vw;
-  height:30vh;
-  padding-bottom: 20px;
- }
 
+  @include descktop {
+    margin-top: $margin-top;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: $colour-header;
+    width: 100vw;
+    height: 30vh;
+    padding-bottom: 20px;
+  }
 }
