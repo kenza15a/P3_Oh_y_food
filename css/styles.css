@@ -57,7 +57,7 @@ header .presentation-location {
     text-align: center;
     background-color: #f6f6f6;
     width: 100vw;
-    height: 38vh;
+    height: 45vh;
     padding-bottom: 20px;
   }
 }
@@ -68,7 +68,7 @@ header .presentation-location {
     text-align: center;
     background-color: #f6f6f6;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
   }
 }
 @media (max-width: 768px) {
