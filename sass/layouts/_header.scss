@@ -5,38 +5,8 @@ header {
   background-color: $colour-header;
   width: 100vw;
   height:65vh;
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    width: 100vw;
-    &-location {
-      background-color: $colour-location;
-    }
-  }
-  @include mobile {
-    margin-top: $margin-top;
-    padding-bottom: 15px;
-    text-align: center;
-    background-color: $colour-header;
-    width: 100vw;
-    height: 50vh;
-    .presentation {
-      display: flex;
-      flex-direction: column;
-      -ms-flex-align: center;
-      width: 100vw;
-      &-shoutout {
-        width: 95%;
-      }
-
-      &-location {
-        background-color: $colour-location;
-      }
-    }
-  }
-
-  @include tablet {
+  
+   @include tablet {
     margin-top: $margin-top;
     padding-bottom: 15px;
     text-align: center;
@@ -52,10 +22,37 @@ header {
     text-align: center;
     background-color: $colour-header;
     width: 100vw;
-    height: 45vh;
-    padding-bottom: 20px;
+    height: 55vh;
+    padding-bottom: 25px;
   }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    width: 100vw;
+    &-location {
+      background-color: $colour-location;
+    }
+
+    
+  }
+  @include mobile {
+ 
+    height: 60vh;
+    .presentation {
+      
+      &-shoutout {
+        width: 95%;
+      }
+  
+    }
+  }
+  
+
+ 
 }
+
+
 
 .menu-header {
   margin-top: $margin-top;

@@ -84,13 +84,14 @@
             flex-wrap: nowrap;
             font-size: 20px;
             line-height: 40px;
+            width:90%;
         }
     }
 
     /*bouton like j'aime*/
     & .menu-heart {
         padding-top: 25px;
-        margin-left: 25px;
+        margin-left: 15px;
         font-size: 30px;
 
         > i {
